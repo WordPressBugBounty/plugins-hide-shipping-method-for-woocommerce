@@ -1,0 +1,1 @@
+# plugins-hide-shipping-method-for-woocommerce
