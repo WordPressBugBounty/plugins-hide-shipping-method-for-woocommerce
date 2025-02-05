@@ -62,7 +62,7 @@ if ( ! is_wp_error( $get_discounts ) && ( 200 === wp_remote_retrieve_response_co
                     </ul>
                 </div>
                 <div class="pro-modal-footer">
-                    <a class="pro-feature-trial-btn upgrade-now" target="_blank" href="javascript:void(0);"><?php esc_html_e( 'Save Now & Upgrade', 'woo-hide-shipping-methods' ) ?></a>
+                    <a class="pro-feature-trial-btn upgrade-now" target="_blank" href="javascript:void(0);"><?php esc_html_e( 'Upgrade Now', 'woo-hide-shipping-methods' ) ?></a>
                 </div>
             </div>
         </div>

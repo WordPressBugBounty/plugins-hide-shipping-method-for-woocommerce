@@ -23,7 +23,7 @@ esc_html_e( 'General Settings', 'woo-hide-shipping-methods' );
 			<th scope="row">
 				<label for="table-whattodo">
 					<?php 
-esc_html_e( 'When "Free Shipping" is available during Checkout', 'woo-hide-shipping-methods' );
+esc_html_e( 'When "Free Shipping" is available during checkout', 'woo-hide-shipping-methods' );
 ?>
 				</label>
 			</th>
@@ -70,7 +70,7 @@ checked( $hide_shipping_option, 'advance_hide_shipping' );
 ?>/>
 					<span
 						class="date-time-text format-i18n"><?php 
-esc_html_e( 'Conditional Hide shipping method Rules', 'woo-hide-shipping-methods' );
+esc_html_e( 'Conditional hide shipping method rules', 'woo-hide-shipping-methods' );
 ?></span>
 					<?php 
 $html = sprintf( '%s<br>%s', esc_html__( 'With this option, you can create conditional hide shipping method rules based on your business needs.', 'woo-hide-shipping-methods' ), esc_html__( 'After saving the settings, a new menu will appear called "Manage Rules".', 'woo-hide-shipping-methods' ) );
@@ -88,7 +88,7 @@ echo wp_kses( wc_help_tip( $html ), array(
 			<th scope="row">
 				<label for="whsm_hide_shipping_cart">
 					<?php 
-esc_html_e( 'Hide all shipping methods?', 'woo-hide-shipping-methods' );
+esc_html_e( 'Hide all shipping methods from cart page', 'woo-hide-shipping-methods' );
 ?>
 				</label>
 			</th>
@@ -99,7 +99,7 @@ echo esc_attr( $whsm_hide_shipping_cart_checked );
 ?>>
 				<p class="description" style="display: none;">
 					<?php 
-$html = esc_html__( 'Enabling this option will hide all shipping methods from the cart page.', 'woo-hide-shipping-methods' );
+$html = esc_html__( 'Enabling this option will hide all shipping methods from the cart page, meaning customers can only view available shipping methods on the checkout page.', 'woo-hide-shipping-methods' );
 ?>
 				</p>
 				<?php 
@@ -109,6 +109,8 @@ echo wp_kses( wc_help_tip( $html ), array(
 ?>
 			</td>
 		</tr>
+		<?php 
+?>
 		</tbody>
 	</table>
 	<p class="submit">

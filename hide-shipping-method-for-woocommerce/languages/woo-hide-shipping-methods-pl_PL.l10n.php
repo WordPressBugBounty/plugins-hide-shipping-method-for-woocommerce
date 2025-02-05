@@ -1,0 +1,3 @@
+<?php
+return ['project-id-version'=>'Hide Shipping Method For WooCommerce Pro','report-msgid-bugs-to'=>'','pot-creation-date'=>'2021-10-25 16:48+0530','po-revision-date'=>'2025-02-03 14:27+0000','last-translator'=>'','language-team'=>'Polish','language'=>'pl_PL','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','plural-forms'=>'nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);','x-generator'=>'Loco https://localise.biz/','x-loco-version'=>'2.5.3; wp-5.8.1','x-domain'=>'woo-hide-shipping-methods','x-poedit-keywordslist'=>'_e;__;esc_html__;esc_html_e;esc_html;esc_attr__;esc_attr_e;esc_attr','x-poedit-basepath'=>'..','x-poedit-searchpath-0'=>'.
+','messages'=>[]];

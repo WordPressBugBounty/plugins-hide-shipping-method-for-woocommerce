@@ -297,7 +297,7 @@ $plugin_key_features = array(
 							<p>
 							<?php 
 								echo sprintf(
-								    esc_html__('Yes! You can read our %s or submit a %s. We are very responsive and strive to do our best to help you.', 'woo-hide-shipping-methods'),
+								    esc_html__('Yes! You can read our %1$s or submit a %2$s. We are very responsive and strive to do our best to help you.', 'woo-hide-shipping-methods'),
 								    '<a href="' . esc_url('https://docs.thedotstore.com/collection/175-hide-shipping') . '" target="_blank">' . esc_html__('knowledge base', 'woo-hide-shipping-methods') . '</a>',
 								    '<a href="' . esc_url('https://www.thedotstore.com/support-ticket/') . '" target="_blank">' . esc_html__('support ticket', 'woo-hide-shipping-methods') . '</a>',
 								);

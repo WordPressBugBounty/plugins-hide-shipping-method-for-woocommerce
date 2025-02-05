@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hide Shipping Method For WooCommerce Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-25 16:48+0530\n"
-"PO-Revision-Date: 2024-06-13 10:50+0000\n"
+"PO-Revision-Date: 2025-02-03 14:27+0000\n"
 "Last-Translator: \n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
@@ -19,10 +19,6 @@ msgstr ""
 "esc_attr_e;esc_attr\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: admin/partials/whsm-information-page.php:40
-msgid " to view license and terms of use."
-msgstr ""
 
 #: admin/partials/form-whsm.php:775 admin/partials/form-whsm.php:1586
 #: admin/partials/form-whsm.php:1724 admin/partials/form-whsm.php:1864
@@ -75,55 +71,11 @@ msgid ""
 "                                                    </p>"
 msgstr ""
 
-#: admin/partials/whsm-get-started.php:118
-msgid ""
-"<strong>Important Note: </strong>This plugin is only compatible with "
-"WooCommerce version 3.0 and more."
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:21
-msgid ""
-"<strong>Option 1: </strong>Hide all other shipping method and when \"Free "
-"Shipping\" available on the cart page."
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:40
-msgid ""
-"<strong>Option 2: </strong>Hide all other shipping method and when \"Free "
-"Shipping\" or \"Local Pickup\" available on the cart page"
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:58
-msgid ""
-"<strong>Option 3: </strong>Hide specific shipping method when \"Free "
-"Shipping\" available on the cart page"
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:76
-msgid ""
-"<strong>Option 4: </strong>Conditional Hide shipping method Rules (With "
-"Compatible Shipping Plugin)"
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:97
-msgid ""
-"<strong>Option 4: </strong>Conditional Hide shipping method Rules (With None "
-"Compatible Shipping Plugin)"
-msgstr ""
-
-#: admin/class-woo-hide-shipping-methods-admin.php:2200
+#: admin/class-woo-hide-shipping-methods-admin.php:2202
 msgid ""
 "<strong>We need your support</strong> to keep updating and improving the "
 "plugin. Please <a href=\"%1$s\" target=\"_blank\">help us by leaving a good "
 "review</a> :) Thanks!"
-msgstr ""
-
-#: admin/partials/header/plugin-header.php:168
-msgid "About"
-msgstr ""
-
-#: admin/partials/header/plugin-header.php:176
-msgid "Account"
 msgstr ""
 
 #: woo-hide-shipping-methods.php:296
@@ -134,12 +86,12 @@ msgstr ""
 msgid "Add Hide Shipping Rule"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:790
-#: admin/partials/class-whsm-shipping-method-page.php:795
+#: admin/partials/class-whsm-shipping-method-page.php:789
+#: admin/partials/class-whsm-shipping-method-page.php:794
 msgid "Add New"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:786
+#: admin/partials/class-whsm-shipping-method-page.php:785
 msgid "Add New 🔒"
 msgstr ""
 
@@ -161,7 +113,7 @@ msgstr ""
 msgid "Advanced Hide Shipping Rules"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:111
+#: admin/partials/whsm-general-setting.php:121
 msgid ""
 "After saving the settings, a new menu will appear called \"Manage Rules\"."
 msgstr ""
@@ -177,7 +129,8 @@ msgstr ""
 #: admin/partials/form-whsm.php:1532 admin/partials/form-whsm.php:1605
 #: admin/partials/form-whsm.php:1743 admin/partials/form-whsm.php:1883
 #: admin/partials/form-whsm.php:2026 admin/partials/form-whsm.php:2174
-#: admin/partials/form-whsm.php:2322 admin/partials/whsm-general-setting.php:63
+#: admin/partials/form-whsm.php:2322 admin/partials/whsm-general-setting.php:73
+#: admin/partials/whsm-general-setting.php:176
 msgid "All"
 msgstr ""
 
@@ -257,7 +210,7 @@ msgstr ""
 msgid "below"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2835
+#: admin/class-woo-hide-shipping-methods-admin.php:2848
 msgid "Blank .json file uploaded."
 msgstr ""
 
@@ -468,16 +421,12 @@ msgstr ""
 msgid "City 🔒"
 msgstr ""
 
-#: admin/partials/whsm-information-page.php:40
-msgid "Click here"
-msgstr ""
-
 #: admin/partials/dots-upgrade-dashboard.php:183
 msgid "Close"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:107
-msgid "Conditional Hide shipping method Rules"
+#: admin/partials/whsm-general-setting.php:117
+msgid "Conditional hide shipping method rules"
 msgstr ""
 
 #: admin/partials/dots-plugin-setup-wizard.php:30
@@ -543,11 +492,11 @@ msgid ""
 "shipping choices for different order sizes."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2597
+#: admin/class-woo-hide-shipping-methods-admin.php:2599
 msgid "Data has been Exported!"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2838
+#: admin/class-woo-hide-shipping-methods-admin.php:2851
 msgid "Data has been Imported!"
 msgstr ""
 
@@ -661,8 +610,17 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:129
-msgid "Enabling this option will hide all shipping methods from the cart page."
+#: admin/partials/whsm-general-setting.php:158
+msgid ""
+"Enable this option to hide the free shipping method when a specific shipping "
+"method is available on the cart page."
+msgstr ""
+
+#: admin/partials/whsm-general-setting.php:139
+msgid ""
+"Enabling this option will hide all shipping methods from the cart page, "
+"meaning customers can only view available shipping methods on the checkout "
+"page."
 msgstr ""
 
 #: admin/partials/form-whsm.php:282
@@ -818,7 +776,7 @@ msgstr ""
 msgid "Equal to ( = )"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:692
+#: admin/partials/class-whsm-shipping-method-page.php:691
 msgid "Error saving shipping method."
 msgstr ""
 
@@ -828,7 +786,8 @@ msgstr ""
 msgid "Everywhere"
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:21
+#: admin/partials/whsm-import-export.php:24
+#: admin/partials/whsm-import-export.php:72
 msgid "Export"
 msgstr ""
 
@@ -838,11 +797,13 @@ msgid ""
 "colleagues or clients."
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:16
+#: admin/partials/whsm-import-export.php:19
+#: admin/partials/whsm-import-export.php:67
 msgid "Export Rule"
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:26
+#: admin/partials/whsm-import-export.php:27
+#: admin/partials/whsm-import-export.php:77
 msgid ""
 "Export the hide shipping method rules settings for this site as a .json file."
 " This allows you to easily import the configuration into another site. "
@@ -856,10 +817,6 @@ msgstr ""
 #: admin/partials/header/plugin-header.php:14
 #: admin/partials/header/plugin-header.php:18
 msgid "Free"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:12
-msgid "Free Version"
 msgstr ""
 
 #: admin/partials/form-whsm.php:516
@@ -878,12 +835,8 @@ msgstr ""
 
 #: admin/partials/header/plugin-header.php:96
 #: admin/partials/header/plugin-header.php:102
-#: admin/partials/whsm-general-setting.php:19
+#: admin/partials/whsm-general-setting.php:29
 msgid "General Settings"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:55
-msgid "German, French, Polish, Spanish"
 msgstr ""
 
 #: admin/partials/dots-plugin-setup-wizard.php:41
@@ -893,7 +846,7 @@ msgid ""
 "site. No personal data is tracked or stored."
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:140
+#: admin/partials/header/plugin-header.php:128
 msgid "Get Premium"
 msgstr ""
 
@@ -905,10 +858,6 @@ msgstr ""
 #: admin/partials/dots-upgrade-dashboard.php:244
 #: admin/partials/dots-upgrade-dashboard.php:344
 msgid "Get The Premium Version"
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:11
-msgid "Getting Started"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:241
@@ -937,10 +886,6 @@ msgstr ""
 msgid "Guest"
 msgstr ""
 
-#: admin/partials/whsm-information-page.php:47
-msgid "Guide Documentation"
-msgstr ""
-
 #: admin/class-woo-hide-shipping-methods-admin.php:175
 #: admin/partials/form-whsm.php:1013 admin/partials/form-whsm.php:1417
 msgid "Height %s"
@@ -953,32 +898,28 @@ msgstr ""
 msgid "Height %s 🔒"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:66
+#: admin/partials/header/plugin-header.php:65
 msgid "Help"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:43
-msgid "Help & Support"
 msgstr ""
 
 #: admin/partials/dots-plugin-setup-wizard.php:40
 msgid "Help us build a better \"Hide Shipping\" Plugin!"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:33
+#: admin/partials/whsm-general-setting.php:43
 msgid ""
 "Hide all other shipping method and when \"Free Shipping\" available on the "
 "cart page"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:40
+#: admin/partials/whsm-general-setting.php:50
 msgid ""
 "Hide all other shipping method and when \"Free Shipping\" or \"Local "
 "Pickup\" available on the cart page"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:122
-msgid "Hide all shipping methods?"
+#: admin/partials/whsm-general-setting.php:132
+msgid "Hide all shipping methods from cart page"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:54
@@ -1001,6 +942,10 @@ msgid ""
 "choose the \"Cash on Delivery\" payment option."
 msgstr ""
 
+#: admin/partials/whsm-general-setting.php:151
+msgid "Hide free shipping on specific shipping"
+msgstr ""
+
 #: admin/partials/dots-upgrade-dashboard.php:125
 msgid "Hide Shipping Based on Payment"
 msgstr ""
@@ -1012,10 +957,6 @@ msgstr ""
 #: admin/class-woo-hide-shipping-methods-admin.php:365
 #: admin/class-woo-hide-shipping-methods-admin.php:366
 msgid "Hide Shipping For WooCommerce"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:32
-msgid "Hide Shipping Method For WooCommerce"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:129
@@ -1070,7 +1011,7 @@ msgstr ""
 msgid "Hide shipping rule updated."
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:778
+#: admin/partials/class-whsm-shipping-method-page.php:777
 msgid "Hide Shipping Rules"
 msgstr ""
 
@@ -1078,9 +1019,9 @@ msgstr ""
 msgid "Hide shipping using extra advanced quantity range-based rules."
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:51
-#: admin/partials/whsm-general-setting.php:86
-#: admin/partials/whsm-general-setting.php:97
+#: admin/partials/whsm-general-setting.php:61
+#: admin/partials/whsm-general-setting.php:96
+#: admin/partials/whsm-general-setting.php:107
 msgid ""
 "Hide specific shipping method when \"Free Shipping\" available on the cart "
 "page"
@@ -1096,6 +1037,10 @@ msgstr ""
 msgid ""
 "Hide specific shipping methods for products with the attribute \"Color = "
 "Red\" offering alternative shipping choices."
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:13
+msgid "How to Get Started"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:327
@@ -1118,15 +1063,17 @@ msgid ""
 "into the specified field to hide it."
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:41
+#: admin/partials/whsm-import-export.php:42
+#: admin/partials/whsm-import-export.php:92
 msgid "Import"
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:11
-msgid "Import & Export Hide Shipping Method Rule"
+#: admin/partials/whsm-import-export.php:14
+#: admin/partials/whsm-import-export.php:62
+msgid "Import & Export Hide Shipping Method Rules"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:163
+#: admin/partials/header/plugin-header.php:151
 msgid "Import / Export"
 msgstr ""
 
@@ -1136,26 +1083,24 @@ msgid ""
 "just one click, saving time and effort."
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:33
+#: admin/partials/whsm-import-export.php:34
+#: admin/partials/whsm-import-export.php:84
 msgid "Import Rule"
 msgstr ""
 
-#: admin/partials/whsm-import-export.php:46
+#: admin/partials/whsm-import-export.php:45
+#: admin/partials/whsm-import-export.php:97
 msgid ""
 "Import the shipping method settings from a .json file. This file can be "
 "obtained by exporting the settings on another site using the form above."
 msgstr ""
 
-#: admin/partials/whsm-information-page.php:35
-msgid "Installed Version"
-msgstr ""
-
-#: public/class-woo-hide-shipping-methods-public.php:4012
+#: public/class-woo-hide-shipping-methods-public.php:4013
 msgid "Key %d does not contain scalar value"
 msgstr ""
 
-#: public/class-woo-hide-shipping-methods-public.php:4001
-#: public/class-woo-hide-shipping-methods-public.php:4008
+#: public/class-woo-hide-shipping-methods-public.php:4002
+#: public/class-woo-hide-shipping-methods-public.php:4009
 msgid "Key %d does not exist in array"
 msgstr ""
 
@@ -1196,20 +1141,12 @@ msgstr ""
 msgid "Less then ( < )"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:131
+#: admin/partials/header/plugin-header.php:122
 msgid "License"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:39
-msgid "License & Terms of use"
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:405
 msgid "List Per Page"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:54
-msgid "Localization"
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:199
@@ -1229,6 +1166,10 @@ msgstr ""
 
 #: admin/partials/header/plugin-header.php:109
 msgid "Manage Rules"
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:25
+msgid "Manage Your Shipping"
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:206
@@ -1346,7 +1287,7 @@ msgstr ""
 msgid "month"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:73
+#: admin/partials/header/plugin-header.php:72
 msgid "My Account"
 msgstr ""
 
@@ -1466,12 +1407,16 @@ msgstr ""
 msgid "Please make sure to enter each postcode on a separate line."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2620
+#: admin/class-woo-hide-shipping-methods-admin.php:2622
 msgid "Please upload a file to import"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2627
+#: admin/class-woo-hide-shipping-methods-admin.php:2629
 msgid "Please upload a valid .json file"
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:30
+msgid "Plugin Tour"
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:158
@@ -1496,17 +1441,9 @@ msgstr ""
 msgid "Pro"
 msgstr ""
 
-#: admin/partials/whsm-information-page.php:10
-msgid "Pro Version"
-msgstr ""
-
 #: admin/partials/form-whsm.php:1618 admin/partials/form-whsm.php:1756
 #: admin/partials/form-whsm.php:1896
 msgid "Product"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:31
-msgid "Product Name"
 msgstr ""
 
 #: admin/partials/form-whsm.php:1544 admin/partials/form-whsm.php:1575
@@ -1526,10 +1463,6 @@ msgstr ""
 msgid "Product Subtotal"
 msgstr ""
 
-#: admin/partials/whsm-information-page.php:27
-msgid "Product Type"
-msgstr ""
-
 #: admin/partials/form-whsm.php:1545 admin/partials/form-whsm.php:1712
 #: admin/partials/form-whsm.php:1719
 msgid "Product Weight"
@@ -1544,18 +1477,16 @@ msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:1766
 #: admin/class-woo-hide-shipping-methods-admin.php:1774
-#: admin/partials/header/plugin-header.php:169
-#: admin/partials/whsm-information-page.php:23
 msgid "Quick info"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:46
-msgid "Quick Start"
 msgstr ""
 
 #: admin/partials/dots-plugin-setup-wizard.php:65
 #: admin/partials/dots-plugin-setup-wizard.php:67
 msgid "Quick Tour"
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:26
+msgid "Read the Setup Guide"
 msgstr ""
 
 #: admin/partials/form-whsm.php:554 admin/partials/form-whsm.php:649
@@ -1604,15 +1535,11 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
-#: admin/partials/dots-upgrade-popup.php:65
-msgid "Save Now & Upgrade"
-msgstr ""
-
-#: admin/partials/whsm-general-setting.php:138
+#: admin/partials/whsm-general-setting.php:200
 msgid "Save Settings"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:810
+#: admin/partials/class-whsm-shipping-method-page.php:809
 msgid "Search"
 msgstr ""
 
@@ -1620,7 +1547,7 @@ msgstr ""
 msgid "Search Engine"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:802
+#: admin/partials/class-whsm-shipping-method-page.php:801
 msgid "Search results for &#8220;%s&#8221;"
 msgstr ""
 
@@ -1747,7 +1674,7 @@ msgstr ""
 #: admin/class-woo-hide-shipping-methods-admin.php:218
 #: admin/class-woo-hide-shipping-methods-admin.php:285
 #: admin/class-woo-hide-shipping-methods-admin.php:344
-#: admin/partials/form-whsm.php:419
+#: admin/partials/form-whsm.php:419 admin/partials/whsm-general-setting.php:166
 msgid "Select shipping method"
 msgstr ""
 
@@ -1768,7 +1695,7 @@ msgid ""
 "shipping methods."
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:125
+#: admin/partials/header/plugin-header.php:116
 #: includes/class-woo-hide-shipping-methods.php:221
 msgid "Settings"
 msgstr ""
@@ -1798,7 +1725,7 @@ msgstr ""
 msgid "Shipping Method Option"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:182
+#: admin/partials/header/plugin-header.php:152
 msgid "Shop Plugins"
 msgstr ""
 
@@ -1843,7 +1770,7 @@ msgstr ""
 msgid "Status changed successfully."
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:63
+#: admin/partials/header/plugin-header.php:62
 msgid "Suggest"
 msgstr ""
 
@@ -1851,13 +1778,9 @@ msgstr ""
 msgid "Sunday"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:60
+#: admin/partials/header/plugin-header.php:59
 #: includes/class-woo-hide-shipping-methods.php:223
 msgid "Support"
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:49
-msgid "Support Forum"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:302
@@ -1874,6 +1797,12 @@ msgstr ""
 msgid ""
 "Take control of shipping methods by setting advanced cart-specific "
 "conditions like weight, length, and width to hide certain shipping options."
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:15
+msgid ""
+"Thank you for choosing our top-rated WooCommerce Hide Shipping plugin. Our "
+"user-friendly interface makes it easy to hide shipping methods conditionally."
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:1809
@@ -1917,6 +1846,13 @@ msgstr ""
 
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:35
 msgid "Title"
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:19
+msgid ""
+"To help you get started, watch the quick tour video on the right. For more "
+"help, explore our help documents or visit our %s for detailed video "
+"tutorials."
 msgstr ""
 
 #: admin/partials/form-whsm.php:551 admin/partials/form-whsm.php:647
@@ -1968,14 +1904,15 @@ msgstr ""
 msgid "Unlock Premium Features with a %s%% Discount!"
 msgstr ""
 
-#: admin/partials/header/plugin-header.php:77
-#: admin/partials/header/plugin-header.php:82
-msgid "Upgrade"
-msgstr ""
-
 #: admin/class-woo-hide-shipping-methods-admin.php:1767
 #: admin/class-woo-hide-shipping-methods-admin.php:1775
 msgid "Upgrade Dashboard"
+msgstr ""
+
+#: admin/partials/dots-upgrade-popup.php:65
+#: admin/partials/header/plugin-header.php:76
+#: admin/partials/header/plugin-header.php:81
+msgid "Upgrade Now"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:166
@@ -1992,7 +1929,7 @@ msgstr ""
 msgid "Upgrade to Unlock Premium Features"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2896
+#: admin/class-woo-hide-shipping-methods-admin.php:2911
 msgid ""
 "Usage limit reached: 10 hide shipping rules created. Upgrade to unlock "
 "unlimited access."
@@ -2030,10 +1967,6 @@ msgstr ""
 #: admin/class-woo-hide-shipping-methods-admin.php:337
 #: admin/partials/form-whsm.php:945 admin/partials/form-whsm.php:1352
 msgid "User Specific"
-msgstr ""
-
-#: admin/partials/whsm-get-started.php:17
-msgid "Using this plugin you can hide shipping based on below options :-"
 msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:141
@@ -2093,6 +2026,10 @@ msgstr ""
 msgid "Weight %s 🔒"
 msgstr ""
 
+#: admin/partials/whsm-get-started.php:14
+msgid "Welcome to Hide Shipping Plugin"
+msgstr ""
+
 #: admin/partials/dots-plugin-setup-wizard.php:25
 msgid "Welcome! 🤗"
 msgstr ""
@@ -2105,8 +2042,8 @@ msgstr ""
 msgid "What’s your refund policy?"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:25
-msgid "When \"Free Shipping\" is available during Checkout"
+#: admin/partials/whsm-general-setting.php:35
+msgid "When \"Free Shipping\" is available during checkout"
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:174
@@ -2121,14 +2058,10 @@ msgstr ""
 msgid "Width %s 🔒"
 msgstr ""
 
-#: admin/partials/whsm-general-setting.php:110
+#: admin/partials/whsm-general-setting.php:120
 msgid ""
 "With this option, you can create conditional hide shipping method rules "
 "based on your business needs."
-msgstr ""
-
-#: admin/partials/whsm-information-page.php:28
-msgid "WooCommerce Plugin"
 msgstr ""
 
 #: admin/partials/dots-plugin-setup-wizard.php:83
@@ -2153,8 +2086,8 @@ msgstr ""
 
 #: admin/partials/dots-upgrade-dashboard.php:300
 msgid ""
-"Yes! You can read our %s or submit a %s. We are very responsive and strive "
-"to do our best to help you."
+"Yes! You can read our %1$s or submit a %2$s. We are very responsive and "
+"strive to do our best to help you."
 msgstr ""
 
 #: admin/partials/dots-plugin-setup-wizard.php:43
@@ -2183,6 +2116,10 @@ msgstr ""
 msgid ""
 "You need to select product specific option in Hide Shipping Rules for "
 "product based option."
+msgstr ""
+
+#: admin/partials/whsm-get-started.php:20
+msgid "YouTube channel"
 msgstr ""
 
 #: admin/class-woo-hide-shipping-methods-admin.php:159

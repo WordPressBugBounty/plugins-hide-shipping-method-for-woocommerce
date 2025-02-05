@@ -202,7 +202,7 @@ class Woo_Hide_Shipping_Methods_Admin {
                 'ajaxurl'                        => admin_url( 'admin-ajax.php' ),
                 'ajax_icon'                      => esc_url( plugin_dir_url( __FILE__ ) . '/images/ajax-loader.gif' ),
                 'plugin_url'                     => plugin_dir_url( __FILE__ ),
-                'dsm_ajax_nonce'                 => wp_create_nonce( 'dsm_nonce' ),
+                'whsma_ajax_nonce'               => wp_create_nonce( 'whsma_wp_nonce' ),
                 'country'                        => esc_html__( 'Country', 'woo-hide-shipping-methods' ),
                 'city'                           => esc_html__( 'City 🔒', 'woo-hide-shipping-methods' ),
                 'state'                          => esc_html__( 'State 🔒', 'woo-hide-shipping-methods' ),
@@ -373,6 +373,8 @@ class Woo_Hide_Shipping_Methods_Admin {
      *
      */
     public function whsma_product_fees_conditions_values_ajax() {
+        //Check ajax nonce reference
+        check_ajax_referer( 'whsma_wp_nonce', 'security' );
         $get_condition = filter_input( INPUT_GET, 'condition', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
         $get_count = filter_input( INPUT_GET, 'count', FILTER_SANITIZE_NUMBER_INT );
         $condition = ( isset( $get_condition ) ? sanitize_text_field( $get_condition ) : '' );
@@ -798,6 +800,8 @@ class Woo_Hide_Shipping_Methods_Admin {
      *
      */
     public function whsma_product_fees_conditions_values_product_ajax() {
+        //Check ajax nonce reference
+        check_ajax_referer( 'whsma_wp_nonce', 'security' );
         $json = true;
         $filter_product_list = [];
         $default_lang = $this->whsma_get_default_language_with_sitepress();
@@ -879,6 +883,8 @@ class Woo_Hide_Shipping_Methods_Admin {
      *
      */
     public function whsm_change_status_from_list_section() {
+        //Check ajax nonce reference
+        check_ajax_referer( 'whsma_wp_nonce', 'security' );
         $active_items = 0;
         /* Check for post request */
         $get_current_shipping_id = filter_input( INPUT_GET, 'current_shipping_id', FILTER_SANITIZE_NUMBER_INT );
@@ -1287,6 +1293,7 @@ class Woo_Hide_Shipping_Methods_Admin {
             echo sprintf( '<div id="message" class="notice notice-error is-dismissible"><p>%s</p></div>', esc_html( $validated_messsage ) );
             return false;
         }
+        return false;
     }
 
     /**
@@ -1811,6 +1818,7 @@ class Woo_Hide_Shipping_Methods_Admin {
                     );
                 } else {
                     $response = wp_remote_get( $query_url );
+                    //phpcs:ignore
                 }
                 if ( !is_wp_error( $response ) && 200 === wp_remote_retrieve_response_code( $response ) ) {
                     update_option( 'whsm_data_submited_in_sendiblue', '1' );

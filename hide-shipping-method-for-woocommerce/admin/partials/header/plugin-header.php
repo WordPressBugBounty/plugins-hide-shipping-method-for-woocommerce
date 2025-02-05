@@ -17,9 +17,8 @@ $hide_shipping_option = get_option( 'hide_shipping_option' );
 $whsm_free_dashboard = ( isset( $current_tab ) && 'upgrade_dashboard' === $current_tab ? 'active' : '' );
 $whsm_settings_page = ( isset( $current_tab ) && 'general_setting' === $current_tab ? 'active' : '' );
 $whsm_rules_list = ( isset( $current_tab ) && 'woo_hide_shipping' === $current_tab ? 'active' : '' );
-$whsm_settings_menu = ( (isset( $current_tab ) || isset( $current_page )) && ('whsm_import_export' === $current_tab || 'get_started' === $current_tab || 'quick_info' === $current_tab || !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) && 'whsm-start-page-account' === $current_page) ? 'active' : '' );
+$whsm_settings_menu = ( (isset( $current_tab ) || isset( $current_page )) && ('whsm_import_export' === $current_tab || !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) && 'whsm-start-page-account' === $current_page) ? 'active' : '' );
 $whsm_get_started = ( isset( $current_tab ) && 'get_started' === $current_tab ? 'active' : '' );
-$whsm_quick_info = ( isset( $current_tab ) && 'quick_info' === $current_tab ? 'active' : '' );
 $whsm_import_export = ( isset( $current_tab ) && 'whsm_import_export' === $current_tab ? 'active' : '' );
 $whsm_account_page = ( isset( $current_page ) && 'whsm-start-page-account' === $current_page ? 'active' : '' );
 $whsm_display_submenu = ( !empty( $whsm_settings_menu ) && 'active' === $whsm_settings_menu ? 'display:inline-block' : 'display:none' );
@@ -55,14 +54,14 @@ echo esc_html__( $plugin_version, 'woo-hide-shipping-methods' );
                 <div class="dots-header-right">
                     <div class="button-dots">
                         <a target="_blank" href="<?php 
-echo esc_url( 'http://www.thedotstore.com/support/?utm_source=plugin_header_menu_link&utm_medium=header_menu&utm_campaign=plugin&utm_id=menu_link_hide_shipping' );
+echo esc_url( 'http://www.thedotstore.com/support/' );
 ?>"><?php 
 esc_html_e( 'Support', 'woo-hide-shipping-methods' );
 ?></a>
                     </div>
                     <div class="button-dots">
                         <a target="_blank" href="<?php 
-echo esc_url( 'https://www.thedotstore.com/feature-requests/?utm_source=plugin_header_menu_link&utm_medium=header_menu&utm_campaign=plugin&utm_id=menu_link_hide_shipping' );
+echo esc_url( 'https://www.thedotstore.com/feature-requests/' );
 ?>"><?php 
 esc_html_e( 'Suggest', 'woo-hide-shipping-methods' );
 ?></a>
@@ -80,33 +79,34 @@ esc_html_e( 'Help', 'woo-hide-shipping-methods' );
                         <?php 
 ?>
                             <a class="dots-upgrade-btn" target="_blank" href="javascript:void(0);"><?php 
-esc_html_e( 'Upgrade', 'woo-hide-shipping-methods' );
+esc_html_e( 'Upgrade Now', 'woo-hide-shipping-methods' );
 ?></a>
                             <?php 
 ?>
                     </div>
                 </div>
             </div>
-            <div class="dots-menu-main">
-                <nav>
-                    <ul>
-                        <?php 
+            <div class="dots-bottom-menu-main">
+                <div class="dots-menu-main">
+                    <nav>
+                        <ul>
+                            <?php 
 if ( isset( $current_page ) && 'whsm-start-page' === $current_page && empty( $current_tab ) ) {
     ?>
-                            <li>
-                                <a class="dotstore_plugin active" href="<?php 
+                                <li>
+                                    <a class="dotstore_plugin active" href="<?php 
     echo esc_url( add_query_arg( array(
         'page' => 'whsm-start-page&tab=general_setting',
     ), admin_url( 'admin.php' ) ) );
     ?>"><?php 
     esc_html_e( 'General Settings', 'woo-hide-shipping-methods' );
     ?></a>
-                            </li>
-                            <?php 
+                                </li>
+                                <?php 
 } else {
     ?>
-                            <li>
-                                <a class="dotstore_plugin <?php 
+                                <li>
+                                    <a class="dotstore_plugin <?php 
     echo esc_attr( $whsm_settings_page );
     ?>" href="<?php 
     echo esc_url( add_query_arg( array(
@@ -115,13 +115,13 @@ if ( isset( $current_page ) && 'whsm-start-page' === $current_page && empty( $cu
     ?>"><?php 
     esc_html_e( 'General Settings', 'woo-hide-shipping-methods' );
     ?></a>
-                            </li>   
-                            <?php 
+                                </li>   
+                                <?php 
 }
 if ( isset( $hide_shipping_option ) && 'advance_hide_shipping' === $hide_shipping_option ) {
     ?>
-                            <li>
-                                <a class="dotstore_plugin <?php 
+                                <li>
+                                    <a class="dotstore_plugin <?php 
     echo esc_attr( $whsm_rules_list );
     ?>" href="<?php 
     echo esc_url( add_query_arg( array(
@@ -130,43 +130,39 @@ if ( isset( $hide_shipping_option ) && 'advance_hide_shipping' === $hide_shippin
     ?>"><?php 
     esc_html_e( 'Manage Rules', 'woo-hide-shipping-methods' );
     ?></a>
-                            </li>
-                            <?php 
+                                </li>
+                                <?php 
 }
-$whsm_settings_page_url = '';
 $whsm_settings_page_url = add_query_arg( array(
-    'page' => 'whsm-start-page&tab=get_started',
+    'page' => 'whsm-start-page&tab=whsm_import_export',
 ), admin_url( 'admin.php' ) );
 ?>
-                        <li>
-                            <a class="dotstore_plugin <?php 
+                            <li>
+                                <a class="dotstore_plugin <?php 
 echo esc_attr( $whsm_settings_menu );
 ?>" href="<?php 
 echo esc_url( $whsm_settings_page_url );
 ?>"><?php 
 esc_html_e( 'Settings', 'woo-hide-shipping-methods' );
 ?></a>
-                        </li>
-                        <?php 
+                            </li>
+                            <?php 
 if ( whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code() ) {
     ?>
-                            <li>
-                                <a class="dotstore_plugin <?php 
+                                <li>
+                                    <a class="dotstore_plugin <?php 
     echo esc_attr( $whsm_account_page );
     ?>" href="<?php 
     echo esc_url( $whsm_fs->get_account_url() );
     ?>"><?php 
     esc_html_e( 'License', 'woo-hide-shipping-methods' );
     ?></a>
-                            </li>
-                            <?php 
-}
-?>
-                        <?php 
-if ( !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) ) {
+                                </li>
+                                <?php 
+} else {
     ?>
-                            <li>
-                                <a class="dotstore_plugin dots_get_premium <?php 
+                                <li>
+                                    <a class="dotstore_plugin dots_get_premium <?php 
     echo esc_attr( $whsm_free_dashboard );
     ?>" href="<?php 
     echo esc_url( add_query_arg( array(
@@ -175,12 +171,22 @@ if ( !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) ) {
     ?>"><?php 
     esc_html_e( 'Get Premium', 'woo-hide-shipping-methods' );
     ?></a>
-                            </li>
-                            <?php 
+                                </li>
+                                <?php 
 }
 ?>
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="dots-getting-started">
+                    <a href="<?php 
+echo esc_url( add_query_arg( array(
+    'page' => 'whsm-start-page&tab=get_started',
+), admin_url( 'admin.php' ) ) );
+?>" class="<?php 
+echo esc_attr( $whsm_get_started );
+?>"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M12 4.75a7.25 7.25 0 100 14.5 7.25 7.25 0 000-14.5zM3.25 12a8.75 8.75 0 1117.5 0 8.75 8.75 0 01-17.5 0zM12 8.75a1.5 1.5 0 01.167 2.99c-.465.052-.917.44-.917 1.01V14h1.5v-.845A3 3 0 109 10.25h1.5a1.5 1.5 0 011.5-1.5zM11.25 15v1.5h1.5V15h-1.5z" fill="#a0a0a0"></path></svg></a>
+                </div>
             </div>
         </header>
         <!-- Upgrade to pro popup -->
@@ -195,46 +201,17 @@ if ( !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) ) {
 echo esc_attr( $whsm_display_submenu );
 ?>">
                     <ul>
-                        <?php 
-?>
                         <li><a class="<?php 
-echo esc_attr( $whsm_get_started );
+echo esc_attr( $whsm_import_export );
 ?>" href="<?php 
 echo esc_url( add_query_arg( array(
-    'page' => 'whsm-start-page&tab=get_started',
+    'page' => 'whsm-start-page&tab=whsm_import_export',
 ), admin_url( 'admin.php' ) ) );
 ?>"><?php 
-esc_html_e( 'About', 'woo-hide-shipping-methods' );
+esc_html_e( 'Import / Export', 'woo-hide-shipping-methods' );
 ?></a></li>
-                        <li><a class="<?php 
-echo esc_attr( $whsm_quick_info );
-?>" href="<?php 
-echo esc_url( add_query_arg( array(
-    'page' => 'whsm-start-page&tab=quick_info',
-), admin_url( 'admin.php' ) ) );
-?>"><?php 
-esc_html_e( 'Quick info', 'woo-hide-shipping-methods' );
-?></a></li>
-                        <?php 
-if ( !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) ) {
-    $check_account_page_exist = menu_page_url( 'whsm-start-page-account', false );
-    if ( isset( $check_account_page_exist ) && !empty( $check_account_page_exist ) ) {
-        ?>
-                                <li>
-                                    <a class="<?php 
-        echo esc_attr( $whsm_account_page );
-        ?>" href="<?php 
-        echo esc_url( $whsm_fs->get_account_url() );
-        ?>"><?php 
-        esc_html_e( 'Account', 'woo-hide-shipping-methods' );
-        ?></a>
-                                </li>
-                                <?php 
-    }
-}
-?>
                         <li><a href="<?php 
-echo esc_url( 'https://www.thedotstore.com/plugins/?utm_source=plugin_header_menu_link&utm_medium=header_menu&utm_campaign=plugin&utm_id=menu_link_hide_shipping' );
+echo esc_url( 'https://www.thedotstore.com/plugins/' );
 ?>" target="_blank"><?php 
 esc_html_e( 'Shop Plugins', 'woo-hide-shipping-methods' );
 ?></a></li>

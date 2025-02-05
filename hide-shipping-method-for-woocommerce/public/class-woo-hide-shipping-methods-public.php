@@ -399,6 +399,7 @@ class Woo_Hide_Shipping_Methods_Public {
                 }
             }
         }
+        return false;
     }
 
     /**
@@ -1398,8 +1399,8 @@ class Woo_Hide_Shipping_Methods_Public {
                     $matched_methods[] = $sm_post;
                 }
             }
-            return $matched_methods;
         }
+        return $matched_methods;
     }
 
     /**

@@ -241,6 +241,7 @@ img.sidebar_plugin_icone{width:45px}
 .whsm-main-table table.table-outer tr td{font-size:13px;color:#333;border:1px solid #ddd;line-height:20px;vertical-align:top;padding:20px}
 .whsm-main-table table.table-outer tr td.fr-1{font-weight:600;width:35%;vertical-align:middle;}
 table.table-mastersettings.table-outer.form-table .hide_shipping_method_list{width:80%;margin:15px 25px 0;}
+table.table-mastersettings.table-outer.form-table .hide_shipping_method_list.hide_shipping_method_on{margin:0}
 .whsm-main-table table.table-outer tr td.fr-2 ul{margin:0}
 .whsm-main-table table.table-outer tr td.fr-2 a{color:#0073aa}
 .whsm-main-table table.table-outer tr td.fr-2 a:hover{color:#0096dd}
@@ -268,7 +269,7 @@ table#tbl-shipping-method tr td.condition-value{width:53%;}
 .whsm-section-left .column-status{width:10%;}
 
 /* Woocoomerce spinner custom code start */
-.blockUI.blockOverlay::before{height:1em;width:1em;display:block;position:absolute;top:50%;left:50%;margin-left:-0.5em;margin-top:-0.5em;content:"";-webkit-animation:spin 1s ease-in-out infinite;animation:spin 1s ease-in-out infinite;background:url(../images/icons/loader.svg) center center;background-size:cover;line-height:1;text-align:center;font-size:2em;color:rgba(0,0,0,.75);}
+.blockUI.blockOverlay::before{height:1em;width:1em;display:block;position:absolute;top:50%;left:50%;margin-left:-0.5em;margin-top:-0.5em;content:"";-webkit-animation:spin 1s ease-in-out infinite;animation:spin 1s ease-in-out infinite;background:url(../images/loader.svg) center center;background-size:cover;line-height:1;text-align:center;font-size:2em;color:rgba(0,0,0,.75);}
 @-webkit-keyframes spin{
 	100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }

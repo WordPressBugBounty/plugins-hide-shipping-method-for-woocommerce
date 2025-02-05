@@ -25,7 +25,8 @@
                             value: params.term,
                             action: 'whsma_product_fees_conditions_values_product_ajax',
                             _page: params.page || 1,
-                            posts_per_page: 10 
+                            posts_per_page: 10,
+                            security: coditional_vars.whsma_ajax_nonce
                         };
                     },
                     processResults: function( data ) {
@@ -90,7 +91,6 @@
             plugin_id: '4743',
             plan_id: '7621',
             public_key:'pk_9edf804dccd14eabfd00ff503acaf',
-            image: 'https://www.thedotstore.com/wp-content/uploads/sites/1417/2023/09/Hide-Shipping-Method-Banner-1-New.png',
             coupon: couponCode,
         });
         handler.open({
@@ -451,7 +451,8 @@
                 data: {
                     'action': 'whsma_product_fees_conditions_values_ajax',
                     'condition': condition,
-                    'count': count
+                    'count': count,
+                    'security': coditional_vars.whsma_ajax_nonce,
                 },
                 contentType: 'application/json',
                 success: function (response) {
@@ -647,6 +648,7 @@
 					'action': 'whsm_change_status_from_list_section',
 					'current_shipping_id': current_shipping_id,
 					'current_value': current_value,
+                    'security': coditional_vars.whsma_ajax_nonce,
 				}, beforeSend: function () {
 					var div = document.createElement('div');
 					div = setAllAttributes(div, {
@@ -710,6 +712,12 @@
             var nextStep = 'step' + ( parseInt( curruntStep.slice(4,5) ) + 1 ); // Masteringjs.io
 
             if( 'step5' !== curruntStep ) {
+                // Youtube videos stop on next step
+                $('iframe[src*="https://www.youtube.com/embed/"]').each(function(){
+                   $(this).attr('src', $(this).attr('src'));
+                   return false;
+                });
+
                 $( '#' + curruntStep ).hide();
                 $( '#' + nextStep ).show();   
             }
@@ -796,7 +804,7 @@
         });
 
         // Script for updagrade to pro modal
-        $(document).on('click', '#dotsstoremain .whsm-pro-feature, .whsm-section-left .upgrade-now', function(){
+        $(document).on('click', '#dotsstoremain .whsm-pro-feature, .whsm-section-left .upgrade-now, .whsm-upgrade-pro-to-unlock', function(){
             $('body').addClass('whsm-modal-visible');
         });
 

@@ -81,7 +81,7 @@ if ( !class_exists( 'Woo_Hide_Shipping_Methods' ) ) {
                 "{$prefix}plugin_action_links_" . WHSM_PLUGIN_BASENAME,
                 array($this, 'plugin_action_links'),
                 10,
-                4
+                1
             );
             add_filter(
                 'plugin_row_meta',

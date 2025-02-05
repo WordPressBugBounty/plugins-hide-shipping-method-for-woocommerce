@@ -174,7 +174,7 @@ if ( ! class_exists( 'WC_Shipping_Methods_Table' ) ) {
 		 *
 		 * @param object $item
 		 *
-		 * @return string
+		 * @return mixed
 		 * @since 1.0.0
 		 *
 		 */
@@ -373,7 +373,7 @@ if ( ! class_exists( 'WC_Shipping_Methods_Table' ) ) {
 
 			$deletenonce = wp_verify_nonce( $delete_nonce, 'bulk-shippingmethods' );
 
-			if ( ! isset( $deletenonce ) && 1 !== $deletenonce ) {
+			if ( 1 !== $deletenonce ) {
 				return;
 			}
 
