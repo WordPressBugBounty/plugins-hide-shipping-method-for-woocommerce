@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Hide Shipping Method For WooCommerce Pro (Premium) "
-"1.5.1\n"
+"1.5.2\n"
 "Report-Msgid-Bugs-To: https://www.multidots.com/contact/\n"
-"POT-Creation-Date: 2025-02-05 06:09:53+00:00\n"
+"POT-Creation-Date: 2025-02-13 08:11:44+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -223,7 +223,7 @@ msgstr ""
 #: admin/class-woo-hide-shipping-methods-admin.php:275
 #: admin/class-woo-hide-shipping-methods-admin.php:334
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:239
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:351
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:356
 #: admin/partials/form-whsm.php:1215 admin/partials/form-whsm.php:1487
 #: admin/partials/form-whsm.php:1688 admin/partials/form-whsm.php:1828
 #: admin/partials/form-whsm.php:1968 admin/partials/form-whsm.php:2113
@@ -615,104 +615,111 @@ msgstr ""
 msgid "Select Class"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1478
-#: admin/class-woo-hide-shipping-methods-admin.php:1504
-msgid "Something went wrong"
+#: admin/class-woo-hide-shipping-methods-admin.php:1479
+msgid "Invalid post ID."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1502
+#: admin/class-woo-hide-shipping-methods-admin.php:1484
+msgid "You do not have permission to edit this post."
+msgstr ""
+
+#: admin/class-woo-hide-shipping-methods-admin.php:1507
 msgid "Status changed successfully."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1779
-#: admin/class-woo-hide-shipping-methods-admin.php:1786
+#: admin/class-woo-hide-shipping-methods-admin.php:1509
+msgid "Something went wrong"
+msgstr ""
+
+#: admin/class-woo-hide-shipping-methods-admin.php:1784
+#: admin/class-woo-hide-shipping-methods-admin.php:1791
 msgid "General Setting"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1780
-#: admin/class-woo-hide-shipping-methods-admin.php:1788
+#: admin/class-woo-hide-shipping-methods-admin.php:1785
+#: admin/class-woo-hide-shipping-methods-admin.php:1793
 msgid "Get Started"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1781
-#: admin/class-woo-hide-shipping-methods-admin.php:1789
+#: admin/class-woo-hide-shipping-methods-admin.php:1786
+#: admin/class-woo-hide-shipping-methods-admin.php:1794
 msgid "Quick info"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1782
-#: admin/class-woo-hide-shipping-methods-admin.php:1790
+#: admin/class-woo-hide-shipping-methods-admin.php:1787
+#: admin/class-woo-hide-shipping-methods-admin.php:1795
 msgid "Upgrade Dashboard"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1787
+#: admin/class-woo-hide-shipping-methods-admin.php:1792
 msgid "Manage Conditional Hide Shipping Rules"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1811
+#: admin/class-woo-hide-shipping-methods-admin.php:1816
 msgid "Hide shipping rule created."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1813
+#: admin/class-woo-hide-shipping-methods-admin.php:1818
 msgid "Hide shipping rule updated."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1815
+#: admin/class-woo-hide-shipping-methods-admin.php:1820
 msgid "Hide shipping rule deleted."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1817
+#: admin/class-woo-hide-shipping-methods-admin.php:1822
 msgid "Hide shipping rule duplicated."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1819
+#: admin/class-woo-hide-shipping-methods-admin.php:1824
 msgid "Hide shipping rule disabled."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1821
+#: admin/class-woo-hide-shipping-methods-admin.php:1826
 msgid "Hide shipping rule enabled."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1824
+#: admin/class-woo-hide-shipping-methods-admin.php:1829
 msgid "There was an error with saving data."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1826
-#: admin/class-woo-hide-shipping-methods-admin.php:1836
+#: admin/class-woo-hide-shipping-methods-admin.php:1831
+#: admin/class-woo-hide-shipping-methods-admin.php:1841
 msgid "There was an error with security check."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1833
+#: admin/class-woo-hide-shipping-methods-admin.php:1838
 msgid "Settings have been saved successfully."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2217
+#: admin/class-woo-hide-shipping-methods-admin.php:2222
 msgid ""
 "<strong>We need your support</strong> to keep updating and improving the "
 "plugin. Please <a href=\"%1$s\" target=\"_blank\">help us by leaving a good "
 "review</a> :) Thanks!"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2614
+#: admin/class-woo-hide-shipping-methods-admin.php:2619
 msgid "Data has been Exported!"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2637
+#: admin/class-woo-hide-shipping-methods-admin.php:2642
 msgid "Please upload a file to import"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2644
+#: admin/class-woo-hide-shipping-methods-admin.php:2649
 msgid "Please upload a valid .json file"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2863
+#: admin/class-woo-hide-shipping-methods-admin.php:2868
 msgid "Blank .json file uploaded."
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2866
+#: admin/class-woo-hide-shipping-methods-admin.php:2871
 msgid "Data has been Imported!"
 msgstr ""
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2926
+#: admin/class-woo-hide-shipping-methods-admin.php:2931
 msgid ""
 "Usage limit reached: 10 hide shipping rules created. Upgrade to unlock "
 "unlimited access."
@@ -753,15 +760,15 @@ msgstr ""
 msgid "Everywhere"
 msgstr ""
 
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:349
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:354
 msgid "Disable"
 msgstr ""
 
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:350
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:355
 msgid "Enable"
 msgstr ""
 
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:472
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:477
 msgid "Rule title"
 msgstr ""
 

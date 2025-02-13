@@ -887,15 +887,21 @@ class Woo_Hide_Shipping_Methods_Admin {
         check_ajax_referer( 'whsma_wp_nonce', 'security' );
         $active_items = 0;
         /* Check for post request */
-        $get_current_shipping_id = filter_input( INPUT_GET, 'current_shipping_id', FILTER_SANITIZE_NUMBER_INT );
-        $get_current_shipping_id = $get_current_shipping_id;
-        $get_current_value = filter_input( INPUT_GET, 'current_value', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
-        $get_post_id = ( isset( $get_current_shipping_id ) ? absint( $get_current_shipping_id ) : '' );
-        if ( empty( $get_post_id ) ) {
-            echo '<strong>' . esc_html__( 'Something went wrong', 'woo-hide-shipping-methods' ) . '</strong>';
-            wp_die();
-        }
+        $get_current_shipping_id = filter_input( INPUT_POST, 'current_shipping_id', FILTER_SANITIZE_NUMBER_INT );
+        $get_post_id = ( $get_current_shipping_id ? absint( $get_current_shipping_id ) : 0 );
+        $get_current_value = filter_input( INPUT_POST, 'current_value', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
         $current_value = ( isset( $get_current_value ) ? sanitize_text_field( $get_current_value ) : '' );
+        if ( empty( $get_post_id ) ) {
+            wp_send_json_error( array(
+                'message' => esc_html__( 'Invalid post ID.', 'woo-hide-shipping-methods' ),
+            ) );
+        }
+        // Check if the user can edit this specific post
+        if ( !current_user_can( 'edit_post', $get_post_id ) ) {
+            wp_send_json_error( array(
+                'message' => esc_html__( 'You do not have permission to edit this post.', 'woo-hide-shipping-methods' ),
+            ) );
+        }
         if ( 'true' === $current_value ) {
             // bhavesh working here
             $post_args = array(
@@ -1070,7 +1076,7 @@ class Woo_Hide_Shipping_Methods_Admin {
                     if ( version_compare( ICL_SITEPRESS_VERSION, '3.2', '>=' ) ) {
                         $language_information = apply_filters( 'wpml_post_language_details', null, $sm_post_id );
                     } else {
-                        $language_information = wpml_get_language_information( $sm_post_id );
+                        $language_information = ( function_exists( 'wpml_get_language_information' ) ? wpml_get_language_information( $sm_post_id ) : '' );
                     }
                     $post_id_language_code = $language_information['language_code'];
                 } else {

@@ -642,7 +642,7 @@
 			var current_value = $(this).prop('checked');
 			
 			$.ajax({
-				type: 'GET',
+				type: 'POST',
 				url: coditional_vars.ajaxurl,
 				data: {
 					'action': 'whsm_change_status_from_list_section',
@@ -827,33 +827,35 @@
         // Script for Beacon configuration
         var helpBeaconCookie = getCookie( 'whsm-help-beacon-hide' );
         if ( ! helpBeaconCookie ) {
-            Beacon('init', 'afe1c188-3c3b-4c5f-9dbd-87329301c920');
-            Beacon('config', {
-                display: {
-                    style: 'icon',
-                    iconImage: 'message',
-                    zIndex: '99999'
-                }
-            });
+            if ( typeof Beacon === 'function' ) {
+                Beacon('init', 'afe1c188-3c3b-4c5f-9dbd-87329301c920');
+                Beacon('config', {
+                    display: {
+                        style: 'icon',
+                        iconImage: 'message',
+                        zIndex: '99999'
+                    }
+                });
 
-            // Add plugin articles IDs to display in beacon
-            Beacon('suggest', ['5e05a2c02c7d3a7e9ae58938', '5e05b7882c7d3a7e9ae58984', '5e05c57604286364bc934169', '5e05ce8b04286364bc9341a4', '5e05dac32c7d3a7e9ae58a7c']);
+                // Add plugin articles IDs to display in beacon
+                Beacon('suggest', ['5e05a2c02c7d3a7e9ae58938', '5e05b7882c7d3a7e9ae58984', '5e05c57604286364bc934169', '5e05ce8b04286364bc9341a4', '5e05dac32c7d3a7e9ae58a7c']);
 
-            // Add custom close icon form beacon
-            setTimeout(function() {
-                if ( $( '.hsds-beacon .BeaconFabButtonFrame' ).length > 0 ) {
-                    let newElement = document.createElement('span');
-                    newElement.classList.add('dashicons', 'dashicons-no-alt', 'dots-beacon-close');
-                    let container = document.getElementsByClassName('BeaconFabButtonFrame');
-                    container[0].appendChild( newElement );
-                }
-            }, 3000);
+                // Add custom close icon form beacon
+                setTimeout(function() {
+                    if ( $( '.hsds-beacon .BeaconFabButtonFrame' ).length > 0 ) {
+                        let newElement = document.createElement('span');
+                        newElement.classList.add('dashicons', 'dashicons-no-alt', 'dots-beacon-close');
+                        let container = document.getElementsByClassName('BeaconFabButtonFrame');
+                        container[0].appendChild( newElement );
+                    }
+                }, 3000);
 
-            // Hide beacon
-            $(document).on('click', '.dots-beacon-close', function(){
-                Beacon('destroy');
-                setCookie( 'whsm-help-beacon-hide' , 'true', 24 * 60 );
-            });
+                // Hide beacon
+                $(document).on('click', '.dots-beacon-close', function(){
+                    Beacon('destroy');
+                    setCookie( 'whsm-help-beacon-hide' , 'true', 24 * 60 );
+                });
+            }
         }
     });
 })(jQuery);

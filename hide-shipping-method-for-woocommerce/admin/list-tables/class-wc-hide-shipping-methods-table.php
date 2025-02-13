@@ -333,8 +333,13 @@ if ( ! class_exists( 'WC_Shipping_Methods_Table' ) ) {
 		 */
         public function column_icl_translations( $item ){
 			global $sitepress;
-			$language_column = new WPML_Custom_Columns($sitepress);
-			return $language_column->add_content_for_posts_management_column( 'icl_translations', $item->ID );
+
+			if( class_exists('WPML_Custom_Columns') ){
+				$language_column = new WPML_Custom_Columns($sitepress);
+				return $language_column->add_content_for_posts_management_column( 'icl_translations', $item->ID );
+			}
+
+			return;
 		}
 
 		/**

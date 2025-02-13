@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hide Shipping Method For WooCommerce Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-25 16:42+0530\n"
-"PO-Revision-Date: 2025-02-03 14:26+0000\n"
+"PO-Revision-Date: 2025-02-13 08:09+0000\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -80,7 +80,7 @@ msgstr ""
 "Sie eine produktspezifische Option ausgewählt haben.\n"
 "                                                     </p>"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2202
+#: admin/class-woo-hide-shipping-methods-admin.php:2222
 msgid ""
 "<strong>We need your support</strong> to keep updating and improving the "
 "plugin. Please <a href=\"%1$s\" target=\"_blank\">help us by leaving a good "
@@ -237,7 +237,7 @@ msgstr "Sei unser Freund"
 msgid "below"
 msgstr "unter"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2848
+#: admin/class-woo-hide-shipping-methods-admin.php:2868
 msgid "Blank .json file uploaded."
 msgstr "Leere .json-Datei hochgeladen."
 
@@ -564,11 +564,11 @@ msgstr ""
 "und stellen Sie so eine genaue Versandauswahl für verschiedene Bestellgrößen "
 "sicher."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2599
+#: admin/class-woo-hide-shipping-methods-admin.php:2619
 msgid "Data has been Exported!"
 msgstr "Daten wurden exportiert!"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2851
+#: admin/class-woo-hide-shipping-methods-admin.php:2871
 msgid "Data has been Imported!"
 msgstr "Daten wurden importiert!"
 
@@ -593,7 +593,7 @@ msgstr ""
 #: admin/class-woo-hide-shipping-methods-admin.php:275
 #: admin/class-woo-hide-shipping-methods-admin.php:334
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:239
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:351
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:356
 #: admin/partials/form-whsm.php:1215 admin/partials/form-whsm.php:1487
 #: admin/partials/form-whsm.php:1688 admin/partials/form-whsm.php:1828
 #: admin/partials/form-whsm.php:1968 admin/partials/form-whsm.php:2113
@@ -603,7 +603,7 @@ msgstr ""
 msgid "Delete"
 msgstr "Löschen"
 
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:349
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:354
 msgid "Disable"
 msgstr "Deaktivieren"
 
@@ -707,11 +707,12 @@ msgstr ""
 "Importieren und exportieren Sie versteckte Versandregeln mühelos für eine "
 "reibungslose Datenverwaltung und -freigabe in Ihrem WooCommerce-Shop."
 
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:350
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:355
 msgid "Enable"
 msgstr "Aktivieren"
 
 #: admin/partials/whsm-general-setting.php:158
+#: admin/partials/whsm-general-setting.php:205
 msgid ""
 "Enable this option to hide the free shipping method when a specific shipping "
 "method is available on the cart page."
@@ -996,8 +997,8 @@ msgstr "Freitag"
 msgid "From:"
 msgstr "Von:"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1764
-#: admin/class-woo-hide-shipping-methods-admin.php:1771
+#: admin/class-woo-hide-shipping-methods-admin.php:1784
+#: admin/class-woo-hide-shipping-methods-admin.php:1791
 msgid "General Setting"
 msgstr "Allgemeine Einstellung"
 
@@ -1022,8 +1023,8 @@ msgstr ""
 msgid "Get Premium"
 msgstr "Premium bekommen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1765
-#: admin/class-woo-hide-shipping-methods-admin.php:1773
+#: admin/class-woo-hide-shipping-methods-admin.php:1785
+#: admin/class-woo-hide-shipping-methods-admin.php:1793
 msgid "Get Started"
 msgstr "Loslegen"
 
@@ -1056,8 +1057,8 @@ msgstr "Größer als ( > )"
 msgid "Greater then ( > )"
 msgstr "Größer als ( > )"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1136
-#: admin/class-woo-hide-shipping-methods-admin.php:1137
+#: admin/class-woo-hide-shipping-methods-admin.php:1139
+#: admin/class-woo-hide-shipping-methods-admin.php:1140
 msgid "Guest"
 msgstr "Gast"
 
@@ -1132,6 +1133,7 @@ msgstr ""
 "Kunden die Zahlungsoption \"Nachnahme\" wählen."
 
 #: admin/partials/whsm-general-setting.php:151
+#: admin/partials/whsm-general-setting.php:198
 msgid "Hide free shipping on specific shipping"
 msgstr "Kostenlosen Versand bei bestimmten Versandarten ausblenden"
 
@@ -1183,23 +1185,23 @@ msgstr ""
 "Verstecken Sie die Versandarten an Wochenenden oder außerhalb der "
 "Geschäftszeiten, wenn diese nicht verfügbar sind."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1796
+#: admin/class-woo-hide-shipping-methods-admin.php:1816
 msgid "Hide shipping rule created."
 msgstr "Versandregel ausblenden erstellt."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1800
+#: admin/class-woo-hide-shipping-methods-admin.php:1820
 msgid "Hide shipping rule deleted."
 msgstr "Versandregel ausblenden gelöscht."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1804
+#: admin/class-woo-hide-shipping-methods-admin.php:1824
 msgid "Hide shipping rule disabled."
 msgstr "Versandregel ausblenden deaktiviert."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1802
+#: admin/class-woo-hide-shipping-methods-admin.php:1822
 msgid "Hide shipping rule duplicated."
 msgstr "Duplizierte Versandregel ausblenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1806
+#: admin/class-woo-hide-shipping-methods-admin.php:1826
 msgid "Hide shipping rule enabled."
 msgstr "Versandregel ausblenden aktiviert."
 
@@ -1208,7 +1210,7 @@ msgstr "Versandregel ausblenden aktiviert."
 msgid "Hide Shipping Rule Name"
 msgstr "Name der Versandregel ausblenden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1798
+#: admin/class-woo-hide-shipping-methods-admin.php:1818
 msgid "Hide shipping rule updated."
 msgstr "Versandregel ausblenden aktualisiert."
 
@@ -1320,6 +1322,10 @@ msgstr ""
 "Diese Datei erhalten Sie, indem Sie die Einstellungen auf einer anderen "
 "Website mithilfe des obigen Formulars exportieren."
 
+#: admin/class-woo-hide-shipping-methods-admin.php:1479
+msgid "Invalid post ID."
+msgstr "Ungültige Post-ID."
+
 #: public/class-woo-hide-shipping-methods-public.php:4013
 msgid "Key %d does not contain scalar value"
 msgstr "Schlüssel %d enthält keinen Skalarwert"
@@ -1386,7 +1392,7 @@ msgstr "Standortspezifisch"
 msgid "Location-Specific Hide Shipping"
 msgstr "Standortspezifisch Versand ausblenden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1772
+#: admin/class-woo-hide-shipping-methods-admin.php:1792
 msgid "Manage Conditional Hide Shipping Rules"
 msgstr "Bedingte Versandregeln ausblenden verwalten"
 
@@ -1675,11 +1681,11 @@ msgstr ""
 "Bitte achten Sie darauf, jede Postleitzahl in einer separaten Zeile "
 "einzugeben."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2622
+#: admin/class-woo-hide-shipping-methods-admin.php:2642
 msgid "Please upload a file to import"
 msgstr "Bitte laden Sie eine Datei zum Importieren hoch"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2629
+#: admin/class-woo-hide-shipping-methods-admin.php:2649
 msgid "Please upload a valid .json file"
 msgstr "Bitte laden Sie eine gültige .json-Datei hoch"
 
@@ -1749,8 +1755,8 @@ msgstr "Produktgewicht"
 msgid "Quantity"
 msgstr "Menge"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1766
-#: admin/class-woo-hide-shipping-methods-admin.php:1774
+#: admin/class-woo-hide-shipping-methods-admin.php:1786
+#: admin/class-woo-hide-shipping-methods-admin.php:1794
 msgid "Quick info"
 msgstr "Schnelle Information"
 
@@ -1799,7 +1805,7 @@ msgstr ""
 msgid "rule match"
 msgstr "Regelübereinstimmung"
 
-#: admin/list-tables/class-wc-hide-shipping-methods-table.php:472
+#: admin/list-tables/class-wc-hide-shipping-methods-table.php:477
 msgid "Rule title"
 msgstr "Regeltitel"
 
@@ -1817,7 +1823,7 @@ msgstr "Änderungen speichern"
 msgid "Save changes"
 msgstr "Änderungen speichern"
 
-#: admin/partials/whsm-general-setting.php:200
+#: admin/partials/whsm-general-setting.php:218
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
@@ -1948,7 +1954,7 @@ msgstr "Wählen Sie ein Attribut aus"
 msgid "Select Category"
 msgstr "Kategorie wählen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1200
+#: admin/class-woo-hide-shipping-methods-admin.php:1203
 msgid "Select Class"
 msgstr "Klasse auswählen"
 
@@ -2001,7 +2007,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1818
+#: admin/class-woo-hide-shipping-methods-admin.php:1838
 msgid "Settings have been saved successfully."
 msgstr "Die Einstellungen wurden erfolgreich gespeichert."
 
@@ -2043,8 +2049,7 @@ msgstr ""
 msgid "Social Media"
 msgstr "Social Media"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1463
-#: admin/class-woo-hide-shipping-methods-admin.php:1489
+#: admin/class-woo-hide-shipping-methods-admin.php:1509
 msgid "Something went wrong"
 msgstr "Etwas ist schief gelaufen"
 
@@ -2070,7 +2075,7 @@ msgstr "Staat 🔒"
 msgid "Status"
 msgstr "Status"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1487
+#: admin/class-woo-hide-shipping-methods-admin.php:1507
 msgid "Status changed successfully."
 msgstr "Status erfolgreich geändert."
 
@@ -2119,12 +2124,12 @@ msgstr ""
 "Plugin entschieden haben. Unsere benutzerfreundliche Oberfläche macht es "
 "einfach, Versandmethoden bedingt auszublenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1809
+#: admin/class-woo-hide-shipping-methods-admin.php:1829
 msgid "There was an error with saving data."
 msgstr "Beim Speichern der Daten ist ein Fehler aufgetreten."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1811
-#: admin/class-woo-hide-shipping-methods-admin.php:1821
+#: admin/class-woo-hide-shipping-methods-admin.php:1831
+#: admin/class-woo-hide-shipping-methods-admin.php:1841
 msgid "There was an error with security check."
 msgstr "Bei der Sicherheitsprüfung ist ein Fehler aufgetreten."
 
@@ -2238,8 +2243,8 @@ msgstr "Schalten Sie noch heute Premium-Funktionen frei!"
 msgid "Unlock Premium Features with a %s%% Discount!"
 msgstr "Schalten Sie Premium-Funktionen mit einem %s%% Rabatt frei!"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1767
-#: admin/class-woo-hide-shipping-methods-admin.php:1775
+#: admin/class-woo-hide-shipping-methods-admin.php:1787
+#: admin/class-woo-hide-shipping-methods-admin.php:1795
 msgid "Upgrade Dashboard"
 msgstr "Upgrade-Dashboard"
 
@@ -2265,7 +2270,7 @@ msgstr "Upgrade auf Pro"
 msgid "Upgrade to Unlock Premium Features"
 msgstr "Upgrade zum Freischalten von Premium-Funktionen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2911
+#: admin/class-woo-hide-shipping-methods-admin.php:2931
 msgid ""
 "Usage limit reached: 10 hide shipping rules created. Upgrade to unlock "
 "unlimited access."
@@ -2472,6 +2477,10 @@ msgid ""
 msgstr ""
 "Sie können mit Ihrer Kreditkarte über Stripe Checkout bezahlen. Oder über "
 "Ihr PayPal-Konto."
+
+#: admin/class-woo-hide-shipping-methods-admin.php:1484
+msgid "You do not have permission to edit this post."
+msgstr "Sie sind nicht berechtigt, diesen Beitrag zu bearbeiten."
 
 #: admin/class-woo-hide-shipping-methods-admin.php:210
 msgid ""

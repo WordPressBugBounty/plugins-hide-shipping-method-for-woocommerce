@@ -3,11 +3,11 @@ Plugin URI: https://www.thedotstore.com/hide-shipping-method-for-woocommerce
 Author: Thedotstore
 Author URI: https://www.thedotstore.com/
 Contributors: dots, jitendrabanjara1991, jariwalasagar
-Stable tag: 1.5.1
-Tags: free shipping, hide shipping method, free shipping, local pickup, WooCommerce
+Stable tag: 1.5.2
+Tags: free shipping, hide shipping methods, hide, local pickup, woocommerce
 Requires PHP: 5.3
 Requires at least: 5.0
-Tested up to: 6.7.1
+Tested up to: 6.7.2
 WC tested up to: 9.6.1
 Donate link: https://www.thedotstore.com/
 License: GPL-2.0+
@@ -219,6 +219,9 @@ Certainly! We pride ourselves on top-of-the-line customer support. Our team is r
 Automatic updates should work great for you.  As always, though, we recommend backing up your site prior to making any updates just to be sure nothing goes wrong.
 
 == Changelog ==
+= 1.5.2 - 13-02-2025 =
+* [Bug Fix] Quick fixes related to the security patch
+
 = 1.5.1 - 05-02-2025 =
 * [Enhancement] Plugin UI enhancement
 * [Enhancement] Compatible with WooCommerce 9.6.x
