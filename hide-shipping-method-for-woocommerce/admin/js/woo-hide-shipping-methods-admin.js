@@ -87,7 +87,7 @@
     /** Script for Freemius upgrade popup */
     function upgradeToProFreemius( couponCode ) {
         let handler;
-        handler = FS.Checkout.configure({
+        handler = new FS.Checkout({
             plugin_id: '4743',
             plan_id: '7621',
             public_key:'pk_9edf804dccd14eabfd00ff503acaf',

@@ -170,15 +170,13 @@ class Woo_Hide_Shipping_Methods_Admin {
                 false
             );
             // Freemius checkout popup library for upgrade
-            if ( !(whsm_fs()->is__premium_only() && whsm_fs()->can_use_premium_code()) ) {
-                wp_enqueue_script(
-                    $this->plugin_name . 'freemius_pro',
-                    'https://checkout.freemius.com/checkout.min.js',
-                    array('jquery'),
-                    $this->version,
-                    true
-                );
-            }
+            wp_enqueue_script(
+                $this->plugin_name . '-freemius_pro',
+                'https://checkout.freemius.com/js/v1/',
+                array('jquery'),
+                $this->version,
+                true
+            );
             wp_enqueue_script(
                 $this->plugin_name,
                 plugin_dir_url( __FILE__ ) . 'js/woo-hide-shipping-methods-admin.js',
@@ -1444,6 +1442,17 @@ class Woo_Hide_Shipping_Methods_Admin {
             }
         }
         $combine_shipping_method_list = $default_woo_list + $get_other_shipping_method_list;
+        // Patch: Add new WooCommerce Local Pickup (Block/Locations) method if enabled
+        $all_methods = WC()->shipping()->get_shipping_methods();
+        foreach ( $all_methods as $method ) {
+            // Adjust these IDs if WooCommerce changes them in the future
+            if ( $method->id === 'pickup_location' ) {
+                // Avoid duplicate if already present
+                if ( !isset( $combine_shipping_method_list[$method->id] ) ) {
+                    $combine_shipping_method_list[$method->id] = __( $method->settings['title'], 'woo-hide-shipping-methods' );
+                }
+            }
+        }
         return $combine_shipping_method_list;
     }
 
@@ -1559,7 +1568,8 @@ class Woo_Hide_Shipping_Methods_Admin {
             'flexible_shipping_single',
             'wbs',
             'jem_table_rate',
-            'apg_shipping'
+            'apg_shipping',
+            'pickup_location'
         );
         $whsm_aflrsfw = array('advanced_flat_rate_shipping');
         $whsm_tbl_rate = array('table_rate');

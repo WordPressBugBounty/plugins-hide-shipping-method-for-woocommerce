@@ -1124,15 +1124,16 @@ class Woo_Hide_Shipping_Methods_Public {
     public function whsma_match_cart_subtotal_before_discount_rule( $wc_curr_version, $cart_total_array, $general_rule_match ) {
         global $woocommerce, $woocommerce_wpml;
         if ( $wc_curr_version >= 3.0 ) {
-            $total = WC()->cart->get_subtotal();
+            $total = $this->whsma_remove_currency_symbol( WC()->cart->get_cart_subtotal() );
         } else {
-            $total = $woocommerce->cart->subtotal;
+            $total = $this->whsma_remove_currency_symbol( $woocommerce->cart->get_cart_subtotal() );
         }
         if ( isset( $woocommerce_wpml ) && !empty( $woocommerce_wpml->multi_currency ) ) {
             $new_total = $woocommerce_wpml->multi_currency->prices->unconvert_price_amount( $total );
         } else {
             $new_total = $total;
         }
+        settype( $new_total, 'float' );
         $is_passed = array();
         foreach ( $cart_total_array as $key => $cart_total ) {
             settype( $cart_total['product_fees_conditions_values'], 'float' );
@@ -1345,9 +1346,16 @@ class Woo_Hide_Shipping_Methods_Public {
      *
      */
     public function whsma_remove_currency_symbol( $price ) {
+        $args = array(
+            'decimal_separator'  => wc_get_price_decimal_separator(),
+            'thousand_separator' => wc_get_price_thousand_separator(),
+        );
         $wc_currency_symbol = get_woocommerce_currency_symbol();
-        $new_price = str_replace( $wc_currency_symbol, '', $price );
-        $new_price2 = (double) preg_replace( '/[^.\\d]/', '', $new_price );
+        $cleanText = wp_strip_all_tags( $price );
+        $new_price = str_replace( $wc_currency_symbol, '', $cleanText );
+        $tnew_price = str_replace( $args['thousand_separator'], '', $new_price );
+        $dnew_price = str_replace( $args['decimal_separator'], '.', $tnew_price );
+        $new_price2 = preg_replace( '/[^.\\d]/', '', $dnew_price );
         return $new_price2;
     }
 
@@ -1458,13 +1466,22 @@ class Woo_Hide_Shipping_Methods_Public {
                             } elseif ( false !== strpos( $methods, '_' ) ) {
                                 $ship_method = explode( '_', $methods );
                             }
+                            $lp_methods = $methods;
+                            if ( strpos( $methods, 'pickup_location:' ) === 0 ) {
+                                $s_method = explode( ':', $methods );
+                                $methods = $s_method[0];
+                            }
                             if ( in_array( $ship_method[0], $whsm_cslist['compatible_shipping'], true ) ) {
                                 if ( !empty( $shipping_method_list ) ) {
                                     if ( in_array( $methods, $shipping_method_list, true ) ) {
                                         if ( 'per_product' === $per_prod_sm ) {
                                             unset($available_shipping_methods[$per_prod_sm]);
                                         } else {
-                                            unset($available_shipping_methods[$methods]);
+                                            if ( strpos( $lp_methods, 'pickup_location:' ) === 0 ) {
+                                                unset($available_shipping_methods[$lp_methods]);
+                                            } else {
+                                                unset($available_shipping_methods[$methods]);
+                                            }
                                         }
                                     }
                                 }

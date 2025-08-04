@@ -12,6 +12,7 @@ $whsm_hide_shipping_cart_checked = ( !empty( $whsm_hide_shipping_cart ) && 'on' 
 $whsm_admin_object = new Woo_Hide_Shipping_Methods_Admin('', '');
 $allowed_tooltip_html = wp_kses_allowed_html( 'post' )['span'];
 require_once plugin_dir_path( __FILE__ ) . 'header/plugin-header.php';
+global $ds_analytics;
 ?>
 <div class="whsm-section-left">
 	<h2><?php 

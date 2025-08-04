@@ -16,7 +16,7 @@
  * Plugin Name: Hide Shipping Method For WooCommerce
  * Plugin URI:          https://www.thedotstore.com/hide-shipping-method-for-woocommerce
  * Description:         Allows store owners to hide shipping methods based on specific conditions!
- * Version:             1.5.2
+ * Version:             1.5.3
  * Author:              theDotstore
  * Author URI:          https://www.thedotstore.com/
  * License:             GPL-2.0+
@@ -26,8 +26,8 @@
  * Requires Plugins:    woocommerce
  *
  * WC requires at least: 4.1
- * WC tested up to:      9.6.1
- * WP tested up to:      6.7.2
+ * WC tested up to:      10.0.4
+ * WP tested up to:      6.8.2
  * Requires PHP:         5.3
  * Requires at least:    5.0
  */
@@ -98,7 +98,7 @@ if ( function_exists( 'whsm_fs' ) ) {
     }
 }
 if ( !defined( 'WOO_HIDE_SHIPPING_METHODS_VERSION' ) ) {
-    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.5.2' );
+    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.5.3' );
 }
 if ( !defined( 'WHSM_PLUGIN_URL' ) ) {
     define( 'WHSM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -126,6 +126,20 @@ if ( !defined( 'WHSM_PERTICULAR_FEE_AMOUNT_NOTICE' ) ) {
 }
 if ( !defined( 'WHSM_STORE_URL' ) ) {
     define( 'WHSM_STORE_URL', 'https://www.thedotstore.com/' );
+}
+/** Dotstore Marketing Plugin IDs from Freemius */
+if ( !defined( 'WHSM_PLUGIN_IDS' ) ) {
+    define( 'WHSM_PLUGIN_IDS', array(
+        3390 => array(
+            'marketing_title'        => esc_html( 'Apply Package Fees on Free Shipping' ),
+            'marketing_tooltip'      => esc_html( 'This will give you premium plugin on discount!' ),
+            'marketing_help_url'     => esc_url( 'https://docs.thedotstore.com/article/949-beginners-guide-for-extra-fees' ),
+            'marketing_button_text'  => esc_html( 'Improves Profit Margins Today' ),
+            'marketing_plugin_path'  => 'woocommerce-conditional-product-fees-for-checkout-premium/woocommerce-conditional-product-fees-for-checkout.php',
+            'marketing_coupon_code'  => 82897,
+            'marketing_feature_list' => array(esc_html( 'Add a fixed package fee when free shipping is selected.' ), esc_html( 'Keep checkout clean and transparent with labeled service fees.' ), esc_html( 'Offset packing, handling, or material costs without increasing product prices.' )),
+        ),
+    ) );
 }
 add_action( 'admin_init', 'whsm__initialize_plugin' );
 /**

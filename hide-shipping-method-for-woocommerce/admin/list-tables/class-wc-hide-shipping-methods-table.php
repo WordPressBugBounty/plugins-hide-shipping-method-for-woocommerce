@@ -479,5 +479,16 @@ if ( ! class_exists( 'WC_Shipping_Methods_Table' ) ) {
 			</p>
         	<?php
     	}
+
+		/**
+		 * Add extra hidden fields (like nonce) to the bulk actions form.
+		 *
+		 * @param string $which
+		 */
+		protected function extra_tablenav( $which ) {
+			if ( $which === 'top' ) {
+				wp_nonce_field( 'bulk-shippingmethods' );
+			}
+		}
 	}
 }

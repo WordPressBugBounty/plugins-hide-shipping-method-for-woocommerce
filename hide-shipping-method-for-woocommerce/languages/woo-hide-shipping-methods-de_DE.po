@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hide Shipping Method For WooCommerce Pro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-25 16:42+0530\n"
-"PO-Revision-Date: 2025-02-13 08:09+0000\n"
+"PO-Revision-Date: 2025-07-30 10:12+0000\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -27,9 +27,9 @@ msgstr ""
 msgid "+ Add Rule"
 msgstr "+ Regel hinzufügen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:233
-#: admin/class-woo-hide-shipping-methods-admin.php:293
-#: admin/class-woo-hide-shipping-methods-admin.php:352
+#: admin/class-woo-hide-shipping-methods-admin.php:225
+#: admin/class-woo-hide-shipping-methods-admin.php:285
+#: admin/class-woo-hide-shipping-methods-admin.php:344
 msgid "0.00"
 msgstr "0.00"
 
@@ -37,9 +37,9 @@ msgstr "0.00"
 msgid "1 site"
 msgstr "1 Seite"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:234
-#: admin/class-woo-hide-shipping-methods-admin.php:294
-#: admin/class-woo-hide-shipping-methods-admin.php:353
+#: admin/class-woo-hide-shipping-methods-admin.php:226
+#: admin/class-woo-hide-shipping-methods-admin.php:286
+#: admin/class-woo-hide-shipping-methods-admin.php:345
 msgid "10"
 msgstr "10"
 
@@ -80,7 +80,7 @@ msgstr ""
 "Sie eine produktspezifische Option ausgewählt haben.\n"
 "                                                     </p>"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2222
+#: admin/class-woo-hide-shipping-methods-admin.php:2228
 msgid ""
 "<strong>We need your support</strong> to keep updating and improving the "
 "plugin. Please <a href=\"%1$s\" target=\"_blank\">help us by leaving a good "
@@ -90,9 +90,19 @@ msgstr ""
 "aktualisieren und zu verbessern. Bitte <a href=\"%1$s\" target=\"_blank\">"
 "helfen Sie uns, indem Sie eine gute Bewertung hinterlassen</a> :) Danke!"
 
-#: woo-hide-shipping-methods.php:296
+#: woo-hide-shipping-methods.php:316
 msgid "Activate Plugin"
 msgstr "Plugin aktivieren"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:317
+msgid "Activate premium plugin"
+msgstr "Premium-Plugin aktivieren"
+
+#: woo-hide-shipping-methods.php:151
+msgid "Add a fixed package fee when free shipping is selected."
+msgstr ""
+"Fügen Sie eine feste Paketgebühr hinzu, wenn kostenloser Versand ausgewählt "
+"ist."
 
 #: admin/partials/form-whsm.php:244
 msgid "Add Hide Shipping Rule"
@@ -126,7 +136,7 @@ msgstr "Erweiterte Versandoptionen ausblenden"
 msgid "Advanced Hide Shipping Rules"
 msgstr "Erweiterte Versandregeln ausblenden"
 
-#: admin/partials/whsm-general-setting.php:121
+#: admin/partials/whsm-general-setting.php:122
 msgid ""
 "After saving the settings, a new menu will appear called \"Manage Rules\"."
 msgstr ""
@@ -151,12 +161,12 @@ msgstr ""
 #: admin/partials/form-whsm.php:1532 admin/partials/form-whsm.php:1605
 #: admin/partials/form-whsm.php:1743 admin/partials/form-whsm.php:1883
 #: admin/partials/form-whsm.php:2026 admin/partials/form-whsm.php:2174
-#: admin/partials/form-whsm.php:2322 admin/partials/whsm-general-setting.php:73
-#: admin/partials/whsm-general-setting.php:176
+#: admin/partials/form-whsm.php:2322 admin/partials/whsm-general-setting.php:74
+#: admin/partials/whsm-general-setting.php:185
 msgid "All"
 msgstr "Alle"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:181
+#: admin/class-woo-hide-shipping-methods-admin.php:173
 msgid "Amount"
 msgstr "Betragen"
 
@@ -176,6 +186,10 @@ msgstr "Jeder"
 msgid "Apply Extra Rule"
 msgstr "Zusätzliche Regel anwenden"
 
+#: woo-hide-shipping-methods.php:144
+msgid "Apply Package Fees on Free Shipping"
+msgstr "Paketgebühren auf kostenlosen Versand anwenden"
+
 #: admin/partials/form-whsm.php:1507
 msgid ""
 "Apply Shipping Rules match between Basic Hide Shipping and Advanced Hide "
@@ -184,9 +198,9 @@ msgstr ""
 "Anwenden der Versandregeln zwischen Basic Shipping Hide und Advanced Hide "
 "Shipping"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:238
-#: admin/class-woo-hide-shipping-methods-admin.php:296
-#: admin/class-woo-hide-shipping-methods-admin.php:355
+#: admin/class-woo-hide-shipping-methods-admin.php:230
+#: admin/class-woo-hide-shipping-methods-admin.php:288
+#: admin/class-woo-hide-shipping-methods-admin.php:347
 msgid "Are you sure want to delete this rule?"
 msgstr "Möchten Sie diese Regel wirklich löschen?"
 
@@ -194,16 +208,16 @@ msgstr "Möchten Sie diese Regel wirklich löschen?"
 msgid "Astra"
 msgstr "Astra"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:205
-#: admin/class-woo-hide-shipping-methods-admin.php:282
-#: admin/class-woo-hide-shipping-methods-admin.php:341
+#: admin/class-woo-hide-shipping-methods-admin.php:197
+#: admin/class-woo-hide-shipping-methods-admin.php:274
+#: admin/class-woo-hide-shipping-methods-admin.php:333
 #: admin/partials/form-whsm.php:918 admin/partials/form-whsm.php:1322
 #: admin/partials/form-whsm.php:1338 admin/partials/form-whsm.php:1345
 msgid "Attribute Specific"
 msgstr "Attributspezifisch"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:283
-#: admin/class-woo-hide-shipping-methods-admin.php:342
+#: admin/class-woo-hide-shipping-methods-admin.php:275
+#: admin/class-woo-hide-shipping-methods-admin.php:334
 #: admin/partials/form-whsm.php:934 admin/partials/form-whsm.php:939
 #: admin/partials/form-whsm.php:1339 admin/partials/form-whsm.php:1346
 msgid "Attribute 🔒"
@@ -237,25 +251,25 @@ msgstr "Sei unser Freund"
 msgid "below"
 msgstr "unter"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2868
+#: admin/class-woo-hide-shipping-methods-admin.php:2874
 msgid "Blank .json file uploaded."
 msgstr "Leere .json-Datei hochgeladen."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:162
-#: admin/class-woo-hide-shipping-methods-admin.php:254
-#: admin/class-woo-hide-shipping-methods-admin.php:313
+#: admin/class-woo-hide-shipping-methods-admin.php:154
+#: admin/class-woo-hide-shipping-methods-admin.php:246
+#: admin/class-woo-hide-shipping-methods-admin.php:305
 #: admin/partials/form-whsm.php:889 admin/partials/form-whsm.php:1291
 msgid "Cart contains category's product"
 msgstr "Der Warenkorb enthält das Produkt der Kategorie"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:160
-#: admin/class-woo-hide-shipping-methods-admin.php:252
-#: admin/class-woo-hide-shipping-methods-admin.php:311
+#: admin/class-woo-hide-shipping-methods-admin.php:152
+#: admin/class-woo-hide-shipping-methods-admin.php:244
+#: admin/class-woo-hide-shipping-methods-admin.php:303
 #: admin/partials/form-whsm.php:869 admin/partials/form-whsm.php:1271
 msgid "Cart contains product"
 msgstr "Warenkorb enthält Produkt"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:165
+#: admin/class-woo-hide-shipping-methods-admin.php:157
 #: admin/partials/form-whsm.php:900 admin/partials/form-whsm.php:1301
 msgid "Cart contains product's quantity"
 msgstr "Der Warenkorb enthält die Produktmenge"
@@ -265,55 +279,55 @@ msgstr "Der Warenkorb enthält die Produktmenge"
 msgid "Cart contains product's quantity 🔒"
 msgstr "Der Warenkorb enthält die Produktmenge 🔒"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:164
+#: admin/class-woo-hide-shipping-methods-admin.php:156
 #: admin/partials/form-whsm.php:898 admin/partials/form-whsm.php:1299
 msgid "Cart contains SKU's product"
 msgstr "Der Warenkorb enthält das Produkt von SKU"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:256
-#: admin/class-woo-hide-shipping-methods-admin.php:315
+#: admin/class-woo-hide-shipping-methods-admin.php:248
+#: admin/class-woo-hide-shipping-methods-admin.php:307
 #: admin/partials/form-whsm.php:904 admin/partials/form-whsm.php:910
 #: admin/partials/form-whsm.php:1305 admin/partials/form-whsm.php:1311
 msgid "Cart contains SKU's product 🔒"
 msgstr "Der Warenkorb enthält das SKU-Produkt 🔒"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:163
-#: admin/class-woo-hide-shipping-methods-admin.php:255
-#: admin/class-woo-hide-shipping-methods-admin.php:314
+#: admin/class-woo-hide-shipping-methods-admin.php:155
+#: admin/class-woo-hide-shipping-methods-admin.php:247
+#: admin/class-woo-hide-shipping-methods-admin.php:306
 #: admin/partials/form-whsm.php:891 admin/partials/form-whsm.php:1293
 msgid "Cart contains tag's product"
 msgstr "Der Warenkorb enthält das Produkt des Tags"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:161
+#: admin/class-woo-hide-shipping-methods-admin.php:153
 #: admin/partials/form-whsm.php:875 admin/partials/form-whsm.php:1277
 msgid "Cart contains variable product"
 msgstr "Warenkorb enthält variable Produkte"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:253
-#: admin/class-woo-hide-shipping-methods-admin.php:312
+#: admin/class-woo-hide-shipping-methods-admin.php:245
+#: admin/class-woo-hide-shipping-methods-admin.php:304
 #: admin/partials/form-whsm.php:879 admin/partials/form-whsm.php:884
 #: admin/partials/form-whsm.php:1281 admin/partials/form-whsm.php:1286
 msgid "Cart contains variable product 🔒"
 msgstr "Der Warenkorb enthält variable Produkte 🔒"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:189
+#: admin/class-woo-hide-shipping-methods-admin.php:181
 #: admin/partials/form-whsm.php:2504
 msgid "Cart Qty"
 msgstr "Warenkorb Menge"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:202
-#: admin/class-woo-hide-shipping-methods-admin.php:279
-#: admin/class-woo-hide-shipping-methods-admin.php:338
+#: admin/class-woo-hide-shipping-methods-admin.php:194
+#: admin/class-woo-hide-shipping-methods-admin.php:271
+#: admin/class-woo-hide-shipping-methods-admin.php:330
 #: admin/partials/form-whsm.php:969 admin/partials/form-whsm.php:1375
 msgid "Cart Specific"
 msgstr "Warenkorbspezifisch"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:193
+#: admin/class-woo-hide-shipping-methods-admin.php:185
 #: admin/partials/form-whsm.php:2754
 msgid "Cart Subtotal"
 msgstr "Warenkorb Zwischensumme"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:170
+#: admin/class-woo-hide-shipping-methods-admin.php:162
 msgid "Cart Subtotal (After Discount)"
 msgstr "Zwischensumme des Einkaufswagens (nach Rabatt)"
 
@@ -324,14 +338,14 @@ msgstr "Zwischensumme des Einkaufswagens (nach Rabatt)"
 msgid "Cart Subtotal (After Discount) "
 msgstr "Warenkorb-Zwischensumme (nach Rabatt)"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:260
-#: admin/class-woo-hide-shipping-methods-admin.php:319
+#: admin/class-woo-hide-shipping-methods-admin.php:252
+#: admin/class-woo-hide-shipping-methods-admin.php:311
 msgid "Cart Subtotal (After Discount) 🔒"
 msgstr "Zwischensumme des Warenkorbs (nach Rabatt) 🔒"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:169
-#: admin/class-woo-hide-shipping-methods-admin.php:259
-#: admin/class-woo-hide-shipping-methods-admin.php:318
+#: admin/class-woo-hide-shipping-methods-admin.php:161
+#: admin/class-woo-hide-shipping-methods-admin.php:251
+#: admin/class-woo-hide-shipping-methods-admin.php:310
 msgid "Cart Subtotal (Before Discount)"
 msgstr "Zwischensumme des Einkaufswagens (vor Rabatt)"
 
@@ -340,11 +354,11 @@ msgstr "Zwischensumme des Einkaufswagens (vor Rabatt)"
 msgid "Cart Subtotal (Before Discount) "
 msgstr "Warenkorb-Zwischensumme (vor Rabatt)"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:194
+#: admin/class-woo-hide-shipping-methods-admin.php:186
 msgid "Cart Total"
 msgstr "Warenkorb Gesamt"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:190
+#: admin/class-woo-hide-shipping-methods-admin.php:182
 #: admin/partials/form-whsm.php:2630
 msgid "Cart Weight"
 msgstr "Wagengewicht"
@@ -382,9 +396,9 @@ msgstr "Kategorie-Zwischensumme"
 msgid "Category Weight"
 msgstr "Kategorie Gewicht"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:203
-#: admin/class-woo-hide-shipping-methods-admin.php:280
-#: admin/class-woo-hide-shipping-methods-admin.php:339
+#: admin/class-woo-hide-shipping-methods-admin.php:195
+#: admin/class-woo-hide-shipping-methods-admin.php:272
+#: admin/class-woo-hide-shipping-methods-admin.php:331
 #: admin/partials/form-whsm.php:1045 admin/partials/form-whsm.php:1449
 #| msgid "Cart Specific"
 msgid "Checkout Specific"
@@ -458,14 +472,14 @@ msgstr ""
 "ausgeblendet werden soll. Diese Regel stimmt mit der aktuellen Zeit überein, "
 "die von Ihrer WordPress-<a href=\"%s\" target=\"_blank\">Zeitzone</a>.</p>"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:156
+#: admin/class-woo-hide-shipping-methods-admin.php:148
 #: admin/partials/form-whsm.php:840 admin/partials/form-whsm.php:1242
 msgid "City"
 msgstr "Stadt"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:235
-#: admin/class-woo-hide-shipping-methods-admin.php:295
-#: admin/class-woo-hide-shipping-methods-admin.php:354
+#: admin/class-woo-hide-shipping-methods-admin.php:227
+#: admin/class-woo-hide-shipping-methods-admin.php:287
+#: admin/class-woo-hide-shipping-methods-admin.php:346
 msgid ""
 "City 1\n"
 "City 2"
@@ -473,8 +487,8 @@ msgstr ""
 "Stadt 1\n"
 "Stadt 2"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:248
-#: admin/class-woo-hide-shipping-methods-admin.php:307
+#: admin/class-woo-hide-shipping-methods-admin.php:240
+#: admin/class-woo-hide-shipping-methods-admin.php:299
 #: admin/partials/form-whsm.php:850 admin/partials/form-whsm.php:858
 #: admin/partials/form-whsm.php:1252 admin/partials/form-whsm.php:1260
 msgid "City 🔒"
@@ -484,10 +498,14 @@ msgstr "Stadt 🔒"
 msgid "Close"
 msgstr "Schließen"
 
-#: admin/partials/whsm-general-setting.php:117
+#: admin/partials/whsm-general-setting.php:118
 #| msgid "Conditional Hide shipping method Rules"
 msgid "Conditional hide shipping method rules"
 msgstr "Bedingtes Ausblenden der Versandartregeln"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:313
+msgid "Configure plugin"
+msgstr "Plugin konfigurieren"
 
 #: admin/partials/dots-plugin-setup-wizard.php:30
 #: admin/partials/dots-plugin-setup-wizard.php:58
@@ -513,20 +531,20 @@ msgstr "Kosten für die Gesamtmenge des Warenkorbs"
 msgid "Cost on Total Cart Subtotal"
 msgstr "Kosten für die Zwischensumme des Gesamtwagens"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:155
-#: admin/class-woo-hide-shipping-methods-admin.php:247
-#: admin/class-woo-hide-shipping-methods-admin.php:306
+#: admin/class-woo-hide-shipping-methods-admin.php:147
+#: admin/class-woo-hide-shipping-methods-admin.php:239
+#: admin/class-woo-hide-shipping-methods-admin.php:298
 #: admin/partials/form-whsm.php:834 admin/partials/form-whsm.php:1236
 msgid "Country"
 msgstr "Land"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:177
+#: admin/class-woo-hide-shipping-methods-admin.php:169
 #: admin/partials/form-whsm.php:1017 admin/partials/form-whsm.php:1421
 msgid "Coupon"
 msgstr "Coupon"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:266
-#: admin/class-woo-hide-shipping-methods-admin.php:325
+#: admin/class-woo-hide-shipping-methods-admin.php:258
+#: admin/class-woo-hide-shipping-methods-admin.php:317
 #: admin/partials/form-whsm.php:1028 admin/partials/form-whsm.php:1039
 #: admin/partials/form-whsm.php:1432 admin/partials/form-whsm.php:1443
 msgid "Coupon 🔒"
@@ -564,11 +582,11 @@ msgstr ""
 "und stellen Sie so eine genaue Versandauswahl für verschiedene Bestellgrößen "
 "sicher."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2619
+#: admin/class-woo-hide-shipping-methods-admin.php:2625
 msgid "Data has been Exported!"
 msgstr "Daten wurden exportiert!"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2871
+#: admin/class-woo-hide-shipping-methods-admin.php:2877
 msgid "Data has been Imported!"
 msgstr "Daten wurden importiert!"
 
@@ -589,9 +607,9 @@ msgstr ""
 "Standardversandmethode und kompatibel mit dem Plugin Versandmethode "
 "ausblenden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:188
-#: admin/class-woo-hide-shipping-methods-admin.php:275
-#: admin/class-woo-hide-shipping-methods-admin.php:334
+#: admin/class-woo-hide-shipping-methods-admin.php:180
+#: admin/class-woo-hide-shipping-methods-admin.php:267
+#: admin/class-woo-hide-shipping-methods-admin.php:326
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:239
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:356
 #: admin/partials/form-whsm.php:1215 admin/partials/form-whsm.php:1487
@@ -619,7 +637,7 @@ msgstr "Do the Woo"
 msgid "Do you offer support for the plugin? What’s it like?"
 msgstr "Bieten Sie Support für das Plugin an? Wie sieht dieser aus?"
 
-#: includes/class-woo-hide-shipping-methods.php:222
+#: includes/class-woo-hide-shipping-methods.php:244
 msgid "Docs"
 msgstr "Dokumente"
 
@@ -711,8 +729,8 @@ msgstr ""
 msgid "Enable"
 msgstr "Aktivieren"
 
-#: admin/partials/whsm-general-setting.php:158
-#: admin/partials/whsm-general-setting.php:205
+#: admin/partials/whsm-general-setting.php:159
+#: admin/partials/whsm-general-setting.php:222
 msgid ""
 "Enable this option to hide the free shipping method when a specific shipping "
 "method is available on the cart page."
@@ -720,7 +738,7 @@ msgstr ""
 "Aktivieren Sie diese Option, um die kostenlose Versandmethode auszublenden, "
 "wenn auf der Warenkorbseite eine bestimmte Versandmethode verfügbar ist."
 
-#: admin/partials/whsm-general-setting.php:139
+#: admin/partials/whsm-general-setting.php:140
 msgid ""
 "Enabling this option will hide all shipping methods from the cart page, "
 "meaning customers can only view available shipping methods on the checkout "
@@ -930,17 +948,29 @@ msgstr ""
 "vorgesehene Feld ein, um bestimmte Versandoptionen auszublenden und so eine "
 "nahtlose Integration mit gängigen Versand-Plugins sicherzustellen."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:182
-#: admin/class-woo-hide-shipping-methods-admin.php:269
-#: admin/class-woo-hide-shipping-methods-admin.php:328
+#: admin/class-woo-hide-shipping-methods-admin.php:174
+#: admin/class-woo-hide-shipping-methods-admin.php:261
+#: admin/class-woo-hide-shipping-methods-admin.php:320
 #: admin/partials/form-whsm.php:1071 admin/partials/form-whsm.php:1087
 #: admin/partials/form-whsm.php:1474
 msgid "Equal to ( = )"
 msgstr "Gleich ( = )"
 
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:388
+msgid "Error occurred while sending data"
+msgstr "Beim Senden der Daten ist ein Fehler aufgetreten"
+
 #: admin/partials/class-whsm-shipping-method-page.php:691
 msgid "Error saving shipping method."
 msgstr "Fehler beim Speichern der Versandart."
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:395
+msgid "Event tracked successfully"
+msgstr "Ereignis erfolgreich verfolgt"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:343
+msgid "Event type is missing"
+msgstr "Der Ereignistyp fehlt"
 
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:256
 #: admin/list-tables/class-wc-hide-shipping-methods-table.php:296
@@ -997,14 +1027,14 @@ msgstr "Freitag"
 msgid "From:"
 msgstr "Von:"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1784
-#: admin/class-woo-hide-shipping-methods-admin.php:1791
+#: admin/class-woo-hide-shipping-methods-admin.php:1776
+#: admin/class-woo-hide-shipping-methods-admin.php:1783
 msgid "General Setting"
 msgstr "Allgemeine Einstellung"
 
 #: admin/partials/header/plugin-header.php:96
 #: admin/partials/header/plugin-header.php:102
-#: admin/partials/whsm-general-setting.php:29
+#: admin/partials/whsm-general-setting.php:30
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
@@ -1023,8 +1053,8 @@ msgstr ""
 msgid "Get Premium"
 msgstr "Premium bekommen"
 
+#: admin/class-woo-hide-shipping-methods-admin.php:1777
 #: admin/class-woo-hide-shipping-methods-admin.php:1785
-#: admin/class-woo-hide-shipping-methods-admin.php:1793
 msgid "Get Started"
 msgstr "Loslegen"
 
@@ -1033,13 +1063,19 @@ msgstr "Loslegen"
 msgid "Get The Premium Version"
 msgstr "Holen Sie sich die Premium-Version"
 
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:202
+msgid "Get {{offer}} Off – Go Premium and Boost Your Experience"
+msgstr ""
+"Holen Sie sich {{offer}} Rabatt – Werden Sie Premium und steigern Sie Ihr "
+"Erlebnis"
+
 #: admin/partials/dots-upgrade-dashboard.php:241
 msgid "Great for website owners with a single WooCommerce Store"
 msgstr "Ideal für Websitebesitzer mit einem einzelnen WooCommerce-Store"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:186
-#: admin/class-woo-hide-shipping-methods-admin.php:273
-#: admin/class-woo-hide-shipping-methods-admin.php:332
+#: admin/class-woo-hide-shipping-methods-admin.php:178
+#: admin/class-woo-hide-shipping-methods-admin.php:265
+#: admin/class-woo-hide-shipping-methods-admin.php:324
 #: admin/partials/form-whsm.php:1077
 #| msgid "greater or Equal to ( >= )"
 msgid "Greater or Equal to ( >= )"
@@ -1050,25 +1086,25 @@ msgstr "Größer oder gleich ( >= )"
 msgid "Greater than ( > )"
 msgstr "Größer als ( > )"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:187
-#: admin/class-woo-hide-shipping-methods-admin.php:274
-#: admin/class-woo-hide-shipping-methods-admin.php:333
+#: admin/class-woo-hide-shipping-methods-admin.php:179
+#: admin/class-woo-hide-shipping-methods-admin.php:266
+#: admin/class-woo-hide-shipping-methods-admin.php:325
 #| msgid "greater then ( > )"
 msgid "Greater then ( > )"
 msgstr "Größer als ( > )"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1139
-#: admin/class-woo-hide-shipping-methods-admin.php:1140
+#: admin/class-woo-hide-shipping-methods-admin.php:1131
+#: admin/class-woo-hide-shipping-methods-admin.php:1132
 msgid "Guest"
 msgstr "Gast"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:175
+#: admin/class-woo-hide-shipping-methods-admin.php:167
 #: admin/partials/form-whsm.php:1013 admin/partials/form-whsm.php:1417
 msgid "Height %s"
 msgstr "Höhe %s"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:264
-#: admin/class-woo-hide-shipping-methods-admin.php:323
+#: admin/class-woo-hide-shipping-methods-admin.php:256
+#: admin/class-woo-hide-shipping-methods-admin.php:315
 #: admin/partials/form-whsm.php:1026 admin/partials/form-whsm.php:1037
 #: admin/partials/form-whsm.php:1430 admin/partials/form-whsm.php:1441
 msgid "Height %s 🔒"
@@ -1083,7 +1119,7 @@ msgid "Help us build a better \"Hide Shipping\" Plugin!"
 msgstr ""
 "Helfen Sie uns, ein besseres \"Versand ausblenden\" Plugin zu entwickeln!"
 
-#: admin/partials/whsm-general-setting.php:43
+#: admin/partials/whsm-general-setting.php:44
 msgid ""
 "Hide all other shipping method and when \"Free Shipping\" available on the "
 "cart page"
@@ -1091,7 +1127,7 @@ msgstr ""
 "Alle anderen Versandarten ausblenden und wenn \"Kostenloser Versand\" auf "
 "der Warenkorbseite verfügbar ist"
 
-#: admin/partials/whsm-general-setting.php:50
+#: admin/partials/whsm-general-setting.php:51
 #| msgid ""
 #| "Hide all other shipping method and when \"Free Shipping\" and \"Local "
 #| "Pickup\" available on the cart page"
@@ -1102,7 +1138,7 @@ msgstr ""
 "Blenden Sie alle anderen Versandarten aus und wenn \"Kostenloser Versand\" "
 "oder \"Abholung vor Ort\" auf der Warenkorbseite verfügbar sind"
 
-#: admin/partials/whsm-general-setting.php:132
+#: admin/partials/whsm-general-setting.php:133
 msgid "Hide all shipping methods from cart page"
 msgstr "Alle Versandarten auf der Warenkorbseite ausblenden"
 
@@ -1132,8 +1168,8 @@ msgstr ""
 "Blenden Sie teure Versandmethoden wie internationalen Versand aus, wenn "
 "Kunden die Zahlungsoption \"Nachnahme\" wählen."
 
-#: admin/partials/whsm-general-setting.php:151
-#: admin/partials/whsm-general-setting.php:198
+#: admin/partials/whsm-general-setting.php:152
+#: admin/partials/whsm-general-setting.php:215
 msgid "Hide free shipping on specific shipping"
 msgstr "Kostenlosen Versand bei bestimmten Versandarten ausblenden"
 
@@ -1147,8 +1183,8 @@ msgstr ""
 "Versand basierend auf bestimmten Gebieten, Gutscheinen, Zahlungen usw. "
 "ausblenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:365
-#: admin/class-woo-hide-shipping-methods-admin.php:366
+#: admin/class-woo-hide-shipping-methods-admin.php:357
+#: admin/class-woo-hide-shipping-methods-admin.php:358
 msgid "Hide Shipping For WooCommerce"
 msgstr "Hide Shipping For WooCommerce"
 
@@ -1185,23 +1221,23 @@ msgstr ""
 "Verstecken Sie die Versandarten an Wochenenden oder außerhalb der "
 "Geschäftszeiten, wenn diese nicht verfügbar sind."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1816
+#: admin/class-woo-hide-shipping-methods-admin.php:1808
 msgid "Hide shipping rule created."
 msgstr "Versandregel ausblenden erstellt."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1820
+#: admin/class-woo-hide-shipping-methods-admin.php:1812
 msgid "Hide shipping rule deleted."
 msgstr "Versandregel ausblenden gelöscht."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1824
+#: admin/class-woo-hide-shipping-methods-admin.php:1816
 msgid "Hide shipping rule disabled."
 msgstr "Versandregel ausblenden deaktiviert."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1822
+#: admin/class-woo-hide-shipping-methods-admin.php:1814
 msgid "Hide shipping rule duplicated."
 msgstr "Duplizierte Versandregel ausblenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1826
+#: admin/class-woo-hide-shipping-methods-admin.php:1818
 msgid "Hide shipping rule enabled."
 msgstr "Versandregel ausblenden aktiviert."
 
@@ -1210,7 +1246,7 @@ msgstr "Versandregel ausblenden aktiviert."
 msgid "Hide Shipping Rule Name"
 msgstr "Name der Versandregel ausblenden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1818
+#: admin/class-woo-hide-shipping-methods-admin.php:1810
 msgid "Hide shipping rule updated."
 msgstr "Versandregel ausblenden aktualisiert."
 
@@ -1224,9 +1260,9 @@ msgstr ""
 "Verbergen Sie den Versand mithilfe besonders erweiterter, auf "
 "Mengenbereichen basierender Regeln."
 
-#: admin/partials/whsm-general-setting.php:61
-#: admin/partials/whsm-general-setting.php:96
-#: admin/partials/whsm-general-setting.php:107
+#: admin/partials/whsm-general-setting.php:62
+#: admin/partials/whsm-general-setting.php:97
+#: admin/partials/whsm-general-setting.php:108
 #| msgid ""
 #| "Hide specific shipping method when \"Free Shipping available on the cart "
 #| "page"
@@ -1322,16 +1358,34 @@ msgstr ""
 "Diese Datei erhalten Sie, indem Sie die Einstellungen auf einer anderen "
 "Website mithilfe des obigen Formulars exportieren."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1479
+#: woo-hide-shipping-methods.php:147
+msgid "Improves Profit Margins Today"
+msgstr "Verbessert die Gewinnmargen heute"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:333
+msgid "Invalid nonce"
+msgstr "Ungültige Nonce"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:354
+msgid "Invalid plugin ID"
+msgstr "Ungültige Plugin-ID"
+
+#: admin/class-woo-hide-shipping-methods-admin.php:1471
 msgid "Invalid post ID."
 msgstr "Ungültige Post-ID."
 
-#: public/class-woo-hide-shipping-methods-public.php:4013
+#: woo-hide-shipping-methods.php:152
+msgid "Keep checkout clean and transparent with labeled service fees."
+msgstr ""
+"Sorgen Sie mit gekennzeichneten Servicegebühren für eine übersichtliche und "
+"transparente Kassenführung."
+
+#: public/class-woo-hide-shipping-methods-public.php:4017
 msgid "Key %d does not contain scalar value"
 msgstr "Schlüssel %d enthält keinen Skalarwert"
 
-#: public/class-woo-hide-shipping-methods-public.php:4002
-#: public/class-woo-hide-shipping-methods-public.php:4009
+#: public/class-woo-hide-shipping-methods-public.php:4006
+#: public/class-woo-hide-shipping-methods-public.php:4013
 msgid "Key %d does not exist in array"
 msgstr "Schlüssel %d existiert nicht im Array"
 
@@ -1343,21 +1397,21 @@ msgstr "Wissensbasis"
 msgid "LearnWoo"
 msgstr "LearnWoo"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:173
+#: admin/class-woo-hide-shipping-methods-admin.php:165
 #: admin/partials/form-whsm.php:1009 admin/partials/form-whsm.php:1413
 msgid "Length %s"
 msgstr "Länge %s"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:262
-#: admin/class-woo-hide-shipping-methods-admin.php:321
+#: admin/class-woo-hide-shipping-methods-admin.php:254
+#: admin/class-woo-hide-shipping-methods-admin.php:313
 #: admin/partials/form-whsm.php:1024 admin/partials/form-whsm.php:1035
 #: admin/partials/form-whsm.php:1428 admin/partials/form-whsm.php:1439
 msgid "Length %s 🔒"
 msgstr "Länge %s 🔒"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:184
-#: admin/class-woo-hide-shipping-methods-admin.php:271
-#: admin/class-woo-hide-shipping-methods-admin.php:330
+#: admin/class-woo-hide-shipping-methods-admin.php:176
+#: admin/class-woo-hide-shipping-methods-admin.php:263
+#: admin/class-woo-hide-shipping-methods-admin.php:322
 #: admin/partials/form-whsm.php:1073
 msgid "Less or Equal to ( <= )"
 msgstr "Kleiner oder gleich ( <= )"
@@ -1367,9 +1421,9 @@ msgstr "Kleiner oder gleich ( <= )"
 msgid "Less than ( < )"
 msgstr "Kleiner als ( < )"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:185
-#: admin/class-woo-hide-shipping-methods-admin.php:272
-#: admin/class-woo-hide-shipping-methods-admin.php:331
+#: admin/class-woo-hide-shipping-methods-admin.php:177
+#: admin/class-woo-hide-shipping-methods-admin.php:264
+#: admin/class-woo-hide-shipping-methods-admin.php:323
 msgid "Less then ( < )"
 msgstr "Weniger als ( < )"
 
@@ -1377,13 +1431,17 @@ msgstr "Weniger als ( < )"
 msgid "License"
 msgstr "Lizenz"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:405
+#: dotstore-analytics/dots-marketing-popup.php:34
+msgid "Limited Time Only – Grab It Before It’s Gone!"
+msgstr "Nur für begrenzte Zeit – schnappen Sie es sich, bevor es weg ist!"
+
+#: admin/class-woo-hide-shipping-methods-admin.php:397
 msgid "List Per Page"
 msgstr "Liste pro Seite"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:199
-#: admin/class-woo-hide-shipping-methods-admin.php:276
-#: admin/class-woo-hide-shipping-methods-admin.php:335
+#: admin/class-woo-hide-shipping-methods-admin.php:191
+#: admin/class-woo-hide-shipping-methods-admin.php:268
+#: admin/class-woo-hide-shipping-methods-admin.php:327
 #: admin/partials/form-whsm.php:832 admin/partials/form-whsm.php:1234
 msgid "Location Specific"
 msgstr "Standortspezifisch"
@@ -1392,7 +1450,7 @@ msgstr "Standortspezifisch"
 msgid "Location-Specific Hide Shipping"
 msgstr "Standortspezifisch Versand ausblenden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1792
+#: admin/class-woo-hide-shipping-methods-admin.php:1784
 msgid "Manage Conditional Hide Shipping Rules"
 msgstr "Bedingte Versandregeln ausblenden verwalten"
 
@@ -1404,12 +1462,20 @@ msgstr "Regeln verwalten"
 msgid "Manage Your Shipping"
 msgstr "Verwalten Sie Ihren Versand"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:206
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:367
+msgid "Marketing plugin title is missing"
+msgstr "Der Titel des Marketing-Plugins fehlt"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:362
+msgid "Marketing website is missing"
+msgstr "Die Marketing-Website fehlt"
+
+#: admin/class-woo-hide-shipping-methods-admin.php:198
 #| msgid "Max qty should greater then min qty"
 msgid "Max qty should greater then min qty."
 msgstr "Die maximale Menge sollte größer als die minimale Menge sein."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:180
+#: admin/class-woo-hide-shipping-methods-admin.php:172
 #: admin/partials/form-whsm.php:1626 admin/partials/form-whsm.php:2047
 #: admin/partials/form-whsm.php:2471
 msgid "Max Quantity"
@@ -1421,7 +1487,7 @@ msgstr "Maximale Menge"
 msgid "Max quantity"
 msgstr "Maximale Menge"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:196
+#: admin/class-woo-hide-shipping-methods-admin.php:188
 #: admin/partials/form-whsm.php:2720 admin/partials/form-whsm.php:2774
 msgid "Max Subtotal"
 msgstr "Maximale Zwischensumme"
@@ -1436,17 +1502,17 @@ msgstr "Maximale Zwischensumme"
 msgid "Max Subtotal "
 msgstr "Maximale Zwischensumme"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:208
+#: admin/class-woo-hide-shipping-methods-admin.php:200
 #| msgid "Max subtotal should greater then min subtotal"
 msgid "Max subtotal should greater then min subtotal."
 msgstr ""
 "Die maximale Zwischensumme sollte größer sein als die minimale Zwischensumme."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:198
+#: admin/class-woo-hide-shipping-methods-admin.php:190
 msgid "Max Total"
 msgstr "Maximale Summe"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:192
+#: admin/class-woo-hide-shipping-methods-admin.php:184
 #: admin/partials/form-whsm.php:2597
 msgid "Max Weight"
 msgstr "Maximalgewicht"
@@ -1462,7 +1528,7 @@ msgstr "Maximalgewicht"
 msgid "Max Weight "
 msgstr "Maximalgewicht"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:207
+#: admin/class-woo-hide-shipping-methods-admin.php:199
 #| msgid "Max weight should greater then min weight"
 msgid "Max weight should greater then min weight."
 msgstr "Das maximale Gewicht sollte größer als das minimale Gewicht sein."
@@ -1471,7 +1537,7 @@ msgstr "Das maximale Gewicht sollte größer als das minimale Gewicht sein."
 msgid "Medium"
 msgstr "Medium"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:179
+#: admin/class-woo-hide-shipping-methods-admin.php:171
 msgid "Min Quantity"
 msgstr "Mindestmenge"
 
@@ -1491,7 +1557,7 @@ msgstr "Mindestmenge *"
 msgid "Min Quantity * "
 msgstr "Mindestmenge *"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:195
+#: admin/class-woo-hide-shipping-methods-admin.php:187
 #: admin/partials/form-whsm.php:2764
 msgid "Min Subtotal"
 msgstr "Min. Zwischensumme"
@@ -1507,11 +1573,11 @@ msgstr "Min. Zwischensumme"
 msgid "Min Subtotal *"
 msgstr "Min. Zwischensumme *"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:197
+#: admin/class-woo-hide-shipping-methods-admin.php:189
 msgid "Min Total"
 msgstr "Min. Gesamt"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:191
+#: admin/class-woo-hide-shipping-methods-admin.php:183
 msgid "Min Weight"
 msgstr "Mindestgewicht"
 
@@ -1562,9 +1628,9 @@ msgstr "Keine Regel gefunden."
 msgid "None Compatible with Hide shipping method plugin"
 msgstr "Keine Kompatibel mit dem Plug-in Versandmethode ausblenden“."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:183
-#: admin/class-woo-hide-shipping-methods-admin.php:270
-#: admin/class-woo-hide-shipping-methods-admin.php:329
+#: admin/class-woo-hide-shipping-methods-admin.php:175
+#: admin/class-woo-hide-shipping-methods-admin.php:262
+#: admin/class-woo-hide-shipping-methods-admin.php:321
 #: admin/partials/form-whsm.php:1081 admin/partials/form-whsm.php:1089
 #: admin/partials/form-whsm.php:1476
 msgid "Not Equal to ( != )"
@@ -1574,9 +1640,9 @@ msgstr "Ungleich ( != )"
 msgid "Not Found Attribute"
 msgstr "Attribut nicht gefunden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:213
-#: admin/class-woo-hide-shipping-methods-admin.php:284
-#: admin/class-woo-hide-shipping-methods-admin.php:343
+#: admin/class-woo-hide-shipping-methods-admin.php:205
+#: admin/class-woo-hide-shipping-methods-admin.php:276
+#: admin/class-woo-hide-shipping-methods-admin.php:335
 #: admin/partials/form-whsm.php:1112 admin/partials/form-whsm.php:1162
 msgid "Note: "
 msgstr "Notiz:"
@@ -1597,6 +1663,14 @@ msgid ""
 msgstr ""
 "Bieten Sie Ihren Kunden Premium-Versandoptionen wie Expressversand oder "
 "kostenlosen Versand, während Sie normale Versandmethoden ausblenden."
+
+#: woo-hide-shipping-methods.php:153
+msgid ""
+"Offset packing, handling, or material costs without increasing product "
+"prices."
+msgstr ""
+"Ausgleich von Verpackungs-, Handhabungs- oder Materialkosten, ohne die "
+"Produktpreise zu erhöhen."
 
 #: admin/partials/dots-upgrade-dashboard.php:149
 msgid "One Click Import & Export"
@@ -1628,13 +1702,13 @@ msgstr "Others"
 msgid "Pay $%s today. Renews in 12 months."
 msgstr "Zahlen Sie heute $%s. Verlängert sich in 12 Monaten."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:204
+#: admin/class-woo-hide-shipping-methods-admin.php:196
 #: admin/partials/form-whsm.php:1050 admin/partials/form-whsm.php:1454
 msgid "Payment Method"
 msgstr "Bezahlverfahren"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:281
-#: admin/class-woo-hide-shipping-methods-admin.php:340
+#: admin/class-woo-hide-shipping-methods-admin.php:273
+#: admin/class-woo-hide-shipping-methods-admin.php:332
 #: admin/partials/form-whsm.php:1054 admin/partials/form-whsm.php:1059
 #: admin/partials/form-whsm.php:1458 admin/partials/form-whsm.php:1463
 msgid "Payment Method 🔒"
@@ -1648,7 +1722,7 @@ msgstr "persönlich"
 msgid "Personal Plan"
 msgstr "Persönlicher Plan"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:211
+#: admin/class-woo-hide-shipping-methods-admin.php:203
 #| msgid ""
 #| "Please add at least one rule in Advance rule OR Select \"No Extra Rule\" "
 #| "option from Apply Extra Rule "
@@ -1660,7 +1734,7 @@ msgstr ""
 "wählen Sie unter \"Zusätzliche Regel anwenden\" die Option \"Keine "
 "zusätzliche Regel\"."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:209
+#: admin/class-woo-hide-shipping-methods-admin.php:201
 #| msgid ""
 #| "Please fill some required field in advance hide shipping rule section"
 msgid "Please fill some required field in advance hide shipping rule section."
@@ -1668,37 +1742,41 @@ msgstr ""
 "Bitte füllen Sie vorab einige Pflichtfelder aus, um den Abschnitt "
 "\"Versandregeln\" auszublenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:216
+#: admin/class-woo-hide-shipping-methods-admin.php:208
 msgid "Please make sure to enter each city name on a separate line."
 msgstr ""
 "Bitte achten Sie darauf, jeden Städtenamen in einer separaten Zeile "
 "einzugeben."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:215
+#: admin/class-woo-hide-shipping-methods-admin.php:207
 #: admin/partials/form-whsm.php:1113
 msgid "Please make sure to enter each postcode on a separate line."
 msgstr ""
 "Bitte achten Sie darauf, jede Postleitzahl in einer separaten Zeile "
 "einzugeben."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2642
+#: admin/class-woo-hide-shipping-methods-admin.php:2648
 msgid "Please upload a file to import"
 msgstr "Bitte laden Sie eine Datei zum Importieren hoch"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2649
+#: admin/class-woo-hide-shipping-methods-admin.php:2655
 msgid "Please upload a valid .json file"
 msgstr "Bitte laden Sie eine gültige .json-Datei hoch"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:350
+msgid "Plugin ID is missing"
+msgstr "Plugin-ID fehlt"
 
 #: admin/partials/whsm-get-started.php:30
 msgid "Plugin Tour"
 msgstr "Plugin-Tour"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:158
+#: admin/class-woo-hide-shipping-methods-admin.php:150
 #: admin/partials/form-whsm.php:844 admin/partials/form-whsm.php:1246
 msgid "Postcode"
 msgstr "Postleitzahl"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:236
+#: admin/class-woo-hide-shipping-methods-admin.php:228
 msgid ""
 "Postcode 1\n"
 "Postcode 2"
@@ -1706,12 +1784,16 @@ msgstr ""
 "Postleitzahl 1\n"
 "Postleitzahl 2"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:250
-#: admin/class-woo-hide-shipping-methods-admin.php:309
+#: admin/class-woo-hide-shipping-methods-admin.php:242
+#: admin/class-woo-hide-shipping-methods-admin.php:301
 #: admin/partials/form-whsm.php:852 admin/partials/form-whsm.php:860
 #: admin/partials/form-whsm.php:1254 admin/partials/form-whsm.php:1262
 msgid "Postcode 🔒"
 msgstr "Postleitzahl 🔒"
+
+#: dotstore-analytics/class-dotstore-tracking-and-analytics.php:303
+msgid "Premium title icon"
+msgstr "Premium-Titelsymbol"
 
 #: admin/partials/header/plugin-header.php:11
 msgid "Pro"
@@ -1729,9 +1811,9 @@ msgstr "Produkt"
 msgid "Product Qty"
 msgstr "Produktmenge"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:200
-#: admin/class-woo-hide-shipping-methods-admin.php:277
-#: admin/class-woo-hide-shipping-methods-admin.php:336
+#: admin/class-woo-hide-shipping-methods-admin.php:192
+#: admin/class-woo-hide-shipping-methods-admin.php:269
+#: admin/class-woo-hide-shipping-methods-admin.php:328
 #: admin/partials/form-whsm.php:867 admin/partials/form-whsm.php:1269
 msgid "Product Specific"
 msgstr "Produktspezifisch"
@@ -1748,15 +1830,15 @@ msgstr "Produktzwischensumme"
 msgid "Product Weight"
 msgstr "Produktgewicht"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:171
-#: admin/class-woo-hide-shipping-methods-admin.php:268
-#: admin/class-woo-hide-shipping-methods-admin.php:327
+#: admin/class-woo-hide-shipping-methods-admin.php:163
+#: admin/class-woo-hide-shipping-methods-admin.php:260
+#: admin/class-woo-hide-shipping-methods-admin.php:319
 #: admin/partials/form-whsm.php:1001 admin/partials/form-whsm.php:1405
 msgid "Quantity"
 msgstr "Menge"
 
+#: admin/class-woo-hide-shipping-methods-admin.php:1778
 #: admin/class-woo-hide-shipping-methods-admin.php:1786
-#: admin/class-woo-hide-shipping-methods-admin.php:1794
 msgid "Quick info"
 msgstr "Schnelle Information"
 
@@ -1823,7 +1905,7 @@ msgstr "Änderungen speichern"
 msgid "Save changes"
 msgstr "Änderungen speichern"
 
-#: admin/partials/whsm-general-setting.php:218
+#: admin/partials/whsm-general-setting.php:235
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
@@ -1839,9 +1921,9 @@ msgstr "Search Engine"
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Suchergebnisse für &#8220;%s&#8221;"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:222
-#: admin/class-woo-hide-shipping-methods-admin.php:289
-#: admin/class-woo-hide-shipping-methods-admin.php:348
+#: admin/class-woo-hide-shipping-methods-admin.php:214
+#: admin/class-woo-hide-shipping-methods-admin.php:281
+#: admin/class-woo-hide-shipping-methods-admin.php:340
 #| msgid "Select category"
 msgid "Select a category"
 msgstr "Wählen Sie eine Kategorie"
@@ -1870,33 +1952,33 @@ msgstr ""
 "Wählen Sie eine Kategorie aus, um die Versandart auszublenden, wenn das "
 "Mindest- und Höchstgewicht erreicht ist."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:224
-#: admin/class-woo-hide-shipping-methods-admin.php:290
-#: admin/class-woo-hide-shipping-methods-admin.php:349
+#: admin/class-woo-hide-shipping-methods-admin.php:216
+#: admin/class-woo-hide-shipping-methods-admin.php:282
+#: admin/class-woo-hide-shipping-methods-admin.php:341
 msgid "Select a country"
 msgstr "Wähle ein Land"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:231
+#: admin/class-woo-hide-shipping-methods-admin.php:223
 msgid "Select a coupon"
 msgstr "Wählen Sie einen Gutschein aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:232
+#: admin/class-woo-hide-shipping-methods-admin.php:224
 msgid "Select a payment method"
 msgstr "Wählen Sie eine Zahlungsmethode aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:221
-#: admin/class-woo-hide-shipping-methods-admin.php:288
-#: admin/class-woo-hide-shipping-methods-admin.php:347
+#: admin/class-woo-hide-shipping-methods-admin.php:213
+#: admin/class-woo-hide-shipping-methods-admin.php:280
+#: admin/class-woo-hide-shipping-methods-admin.php:339
 msgid "Select a product"
 msgstr "Wähle ein Produkt"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:228
+#: admin/class-woo-hide-shipping-methods-admin.php:220
 msgid "Select a product sku"
 msgstr "Wählen Sie eine Produkt-SKU aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:227
-#: admin/class-woo-hide-shipping-methods-admin.php:291
-#: admin/class-woo-hide-shipping-methods-admin.php:350
+#: admin/class-woo-hide-shipping-methods-admin.php:219
+#: admin/class-woo-hide-shipping-methods-admin.php:283
+#: admin/class-woo-hide-shipping-methods-admin.php:342
 msgid "Select a product tag"
 msgstr "Wählen Sie ein Produkt-Tag aus"
 
@@ -1924,29 +2006,29 @@ msgstr ""
 "Wählen Sie ein Produkt aus, um die Versandart auszublenden, wenn das Mindest-"
 " und Höchstgewicht erreicht ist."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:223
+#: admin/class-woo-hide-shipping-methods-admin.php:215
 msgid "Select a shipping class"
 msgstr "Wählen Sie eine Versandklasse aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:225
+#: admin/class-woo-hide-shipping-methods-admin.php:217
 msgid "Select a state"
 msgstr "Wähle einen Staat"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:229
-#: admin/class-woo-hide-shipping-methods-admin.php:292
-#: admin/class-woo-hide-shipping-methods-admin.php:351
+#: admin/class-woo-hide-shipping-methods-admin.php:221
+#: admin/class-woo-hide-shipping-methods-admin.php:284
+#: admin/class-woo-hide-shipping-methods-admin.php:343
 msgid "Select a user"
 msgstr "Wählen Sie einen Benutzer aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:230
+#: admin/class-woo-hide-shipping-methods-admin.php:222
 msgid "Select a user role"
 msgstr "Wählen Sie eine Benutzerrolle aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:226
+#: admin/class-woo-hide-shipping-methods-admin.php:218
 msgid "Select a zone"
 msgstr "Wählen Sie eine Zone aus"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:237
+#: admin/class-woo-hide-shipping-methods-admin.php:229
 msgid "Select an attribute"
 msgstr "Wählen Sie ein Attribut aus"
 
@@ -1954,11 +2036,11 @@ msgstr "Wählen Sie ein Attribut aus"
 msgid "Select Category"
 msgstr "Kategorie wählen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1203
+#: admin/class-woo-hide-shipping-methods-admin.php:1195
 msgid "Select Class"
 msgstr "Klasse auswählen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:219
+#: admin/class-woo-hide-shipping-methods-admin.php:211
 #: admin/partials/form-whsm.php:627 admin/partials/form-whsm.php:723
 #| msgid "Select days of the week"
 msgid "Select day of the week"
@@ -1974,10 +2056,10 @@ msgstr "Enddatum auswählen"
 msgid "Select One"
 msgstr "Select One"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:218
-#: admin/class-woo-hide-shipping-methods-admin.php:285
-#: admin/class-woo-hide-shipping-methods-admin.php:344
-#: admin/partials/form-whsm.php:419 admin/partials/whsm-general-setting.php:166
+#: admin/class-woo-hide-shipping-methods-admin.php:210
+#: admin/class-woo-hide-shipping-methods-admin.php:277
+#: admin/class-woo-hide-shipping-methods-admin.php:336
+#: admin/partials/form-whsm.php:419 admin/partials/whsm-general-setting.php:167
 msgid "Select shipping method"
 msgstr "Versandart auswählen"
 
@@ -2003,21 +2085,21 @@ msgstr ""
 "Ausblenden von Versandmethoden zu aktivieren."
 
 #: admin/partials/header/plugin-header.php:116
-#: includes/class-woo-hide-shipping-methods.php:221
+#: includes/class-woo-hide-shipping-methods.php:243
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1838
+#: admin/class-woo-hide-shipping-methods-admin.php:1830
 msgid "Settings have been saved successfully."
 msgstr "Die Einstellungen wurden erfolgreich gespeichert."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:178
+#: admin/class-woo-hide-shipping-methods-admin.php:170
 #: admin/partials/form-whsm.php:1019 admin/partials/form-whsm.php:1423
 msgid "Shipping Class"
 msgstr "Versandklasse"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:267
-#: admin/class-woo-hide-shipping-methods-admin.php:326
+#: admin/class-woo-hide-shipping-methods-admin.php:259
+#: admin/class-woo-hide-shipping-methods-admin.php:318
 #: admin/partials/form-whsm.php:1029 admin/partials/form-whsm.php:1040
 #: admin/partials/form-whsm.php:1433 admin/partials/form-whsm.php:1444
 msgid "Shipping Class 🔒"
@@ -2049,7 +2131,7 @@ msgstr ""
 msgid "Social Media"
 msgstr "Social Media"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1509
+#: admin/class-woo-hide-shipping-methods-admin.php:1501
 msgid "Something went wrong"
 msgstr "Etwas ist schief gelaufen"
 
@@ -2058,13 +2140,13 @@ msgstr "Etwas ist schief gelaufen"
 msgid "Start Date"
 msgstr "Startdatum"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:157
+#: admin/class-woo-hide-shipping-methods-admin.php:149
 #: admin/partials/form-whsm.php:842 admin/partials/form-whsm.php:1244
 msgid "State"
 msgstr "Bundesland"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:249
-#: admin/class-woo-hide-shipping-methods-admin.php:308
+#: admin/class-woo-hide-shipping-methods-admin.php:241
+#: admin/class-woo-hide-shipping-methods-admin.php:300
 #: admin/partials/form-whsm.php:851 admin/partials/form-whsm.php:859
 #: admin/partials/form-whsm.php:1253 admin/partials/form-whsm.php:1261
 msgid "State 🔒"
@@ -2075,7 +2157,7 @@ msgstr "Staat 🔒"
 msgid "Status"
 msgstr "Status"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1507
+#: admin/class-woo-hide-shipping-methods-admin.php:1499
 msgid "Status changed successfully."
 msgstr "Status erfolgreich geändert."
 
@@ -2088,7 +2170,7 @@ msgid "Sunday"
 msgstr "Sonntag"
 
 #: admin/partials/header/plugin-header.php:59
-#: includes/class-woo-hide-shipping-methods.php:223
+#: includes/class-woo-hide-shipping-methods.php:245
 #| msgid "Quick Support"
 msgid "Support"
 msgstr "Unterstützung"
@@ -2124,20 +2206,20 @@ msgstr ""
 "Plugin entschieden haben. Unsere benutzerfreundliche Oberfläche macht es "
 "einfach, Versandmethoden bedingt auszublenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1829
+#: admin/class-woo-hide-shipping-methods-admin.php:1821
 msgid "There was an error with saving data."
 msgstr "Beim Speichern der Daten ist ein Fehler aufgetreten."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1831
-#: admin/class-woo-hide-shipping-methods-admin.php:1841
+#: admin/class-woo-hide-shipping-methods-admin.php:1823
+#: admin/class-woo-hide-shipping-methods-admin.php:1833
 msgid "There was an error with security check."
 msgstr "Bei der Sicherheitsprüfung ist ein Fehler aufgetreten."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:214
+#: admin/class-woo-hide-shipping-methods-admin.php:206
 msgid "This rule will apply when you apply a coupon on the frontend."
 msgstr "Diese Regel gilt, wenn Sie einen Coupon im Frontend anwenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:217
+#: admin/class-woo-hide-shipping-methods-admin.php:209
 #: admin/partials/form-whsm.php:1163
 msgid ""
 "This rule will only apply when all (width, height and length) has non-zero "
@@ -2146,13 +2228,17 @@ msgstr ""
 "Diese Regel gilt nur, wenn alle (Breite, Höhe und Länge) einen Wert ungleich "
 "Null haben."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:166
+#: admin/class-woo-hide-shipping-methods-admin.php:158
 msgid ""
 "This rule will only work if you have selected any one Product Specific "
 "option. "
 msgstr ""
 "Diese Regel funktioniert nur, wenn Sie eine produktspezifische Option "
 "ausgewählt haben."
+
+#: woo-hide-shipping-methods.php:145
+msgid "This will give you premium plugin on discount!"
+msgstr "Dadurch erhalten Sie ein Premium-Plugin mit Rabatt!"
 
 #: admin/partials/form-whsm.php:515
 msgid "Thursday"
@@ -2235,6 +2321,7 @@ msgstr ""
 "erstellen."
 
 #: admin/partials/dots-upgrade-popup.php:52
+#: dotstore-analytics/dots-marketing-popup.php:22
 #| msgid "Unlock Premium Features!"
 msgid "Unlock Premium Features Today!"
 msgstr "Schalten Sie noch heute Premium-Funktionen frei!"
@@ -2243,14 +2330,15 @@ msgstr "Schalten Sie noch heute Premium-Funktionen frei!"
 msgid "Unlock Premium Features with a %s%% Discount!"
 msgstr "Schalten Sie Premium-Funktionen mit einem %s%% Rabatt frei!"
 
+#: admin/class-woo-hide-shipping-methods-admin.php:1779
 #: admin/class-woo-hide-shipping-methods-admin.php:1787
-#: admin/class-woo-hide-shipping-methods-admin.php:1795
 msgid "Upgrade Dashboard"
 msgstr "Upgrade-Dashboard"
 
 #: admin/partials/dots-upgrade-popup.php:65
 #: admin/partials/header/plugin-header.php:76
 #: admin/partials/header/plugin-header.php:81
+#: dotstore-analytics/dots-marketing-popup.php:10
 msgid "Upgrade Now"
 msgstr "Jetzt upgraden"
 
@@ -2270,7 +2358,7 @@ msgstr "Upgrade auf Pro"
 msgid "Upgrade to Unlock Premium Features"
 msgstr "Upgrade zum Freischalten von Premium-Funktionen"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:2931
+#: admin/class-woo-hide-shipping-methods-admin.php:2937
 msgid ""
 "Usage limit reached: 10 hide shipping rules created. Upgrade to unlock "
 "unlimited access."
@@ -2283,20 +2371,20 @@ msgid "Use advanced rules to hide specific shipping methods."
 msgstr ""
 "Verwenden Sie erweiterte Regeln, um bestimmte Versandmethoden auszublenden."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:167
-#: admin/class-woo-hide-shipping-methods-admin.php:257
-#: admin/class-woo-hide-shipping-methods-admin.php:316
+#: admin/class-woo-hide-shipping-methods-admin.php:159
+#: admin/class-woo-hide-shipping-methods-admin.php:249
+#: admin/class-woo-hide-shipping-methods-admin.php:308
 #: admin/partials/form-whsm.php:947 admin/partials/form-whsm.php:1354
 msgid "User"
 msgstr "Benutzer"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:168
+#: admin/class-woo-hide-shipping-methods-admin.php:160
 #: admin/partials/form-whsm.php:953 admin/partials/form-whsm.php:1360
 msgid "User Role"
 msgstr "Benutzer-Rolle"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:258
-#: admin/class-woo-hide-shipping-methods-admin.php:317
+#: admin/class-woo-hide-shipping-methods-admin.php:250
+#: admin/class-woo-hide-shipping-methods-admin.php:309
 #: admin/partials/form-whsm.php:957 admin/partials/form-whsm.php:962
 #: admin/partials/form-whsm.php:1364 admin/partials/form-whsm.php:1369
 msgid "User Role 🔒"
@@ -2306,9 +2394,9 @@ msgstr "Benutzerrolle 🔒"
 msgid "User Role-Based Hide Shipping"
 msgstr "Benutzerrollenbasierter Versand ausblenden"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:201
-#: admin/class-woo-hide-shipping-methods-admin.php:278
-#: admin/class-woo-hide-shipping-methods-admin.php:337
+#: admin/class-woo-hide-shipping-methods-admin.php:193
+#: admin/class-woo-hide-shipping-methods-admin.php:270
+#: admin/class-woo-hide-shipping-methods-admin.php:329
 #: admin/partials/form-whsm.php:945 admin/partials/form-whsm.php:1352
 msgid "User Specific"
 msgstr "Benutzerspezifisch"
@@ -2334,13 +2422,13 @@ msgstr "Sehr einfach zu bedienen und hält was es verspricht!"
 msgid "Vineet Gray"
 msgstr "Vineet Gray"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:176
+#: admin/class-woo-hide-shipping-methods-admin.php:168
 #: admin/partials/form-whsm.php:1015 admin/partials/form-whsm.php:1419
 msgid "Volume %s"
 msgstr "Volumen %s"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:265
-#: admin/class-woo-hide-shipping-methods-admin.php:324
+#: admin/class-woo-hide-shipping-methods-admin.php:257
+#: admin/class-woo-hide-shipping-methods-admin.php:316
 #: admin/partials/form-whsm.php:1027 admin/partials/form-whsm.php:1038
 #: admin/partials/form-whsm.php:1431 admin/partials/form-whsm.php:1442
 msgid "Volume %s 🔒"
@@ -2365,12 +2453,12 @@ msgstr "Gewicht"
 msgid "Weight "
 msgstr "Gewicht"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:172
+#: admin/class-woo-hide-shipping-methods-admin.php:164
 msgid "Weight %s"
 msgstr "Gewicht %s"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:261
-#: admin/class-woo-hide-shipping-methods-admin.php:320
+#: admin/class-woo-hide-shipping-methods-admin.php:253
+#: admin/class-woo-hide-shipping-methods-admin.php:312
 msgid "Weight %s 🔒"
 msgstr "Gewichte %s 🔒"
 
@@ -2390,24 +2478,24 @@ msgstr "Welche Zahlungsmethoden werden akzeptiert?"
 msgid "What’s your refund policy?"
 msgstr "Wie sind Ihre Rückerstattungsrichtlinien?"
 
-#: admin/partials/whsm-general-setting.php:35
+#: admin/partials/whsm-general-setting.php:36
 #| msgid "When \"Free Shipping\" is available during Checkout"
 msgid "When \"Free Shipping\" is available during checkout"
 msgstr "Wenn beim Bezahlvorgang „Kostenloser Versand“ verfügbar ist"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:174
+#: admin/class-woo-hide-shipping-methods-admin.php:166
 #: admin/partials/form-whsm.php:1011 admin/partials/form-whsm.php:1415
 msgid "Width %s"
 msgstr "Breite %s"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:263
-#: admin/class-woo-hide-shipping-methods-admin.php:322
+#: admin/class-woo-hide-shipping-methods-admin.php:255
+#: admin/class-woo-hide-shipping-methods-admin.php:314
 #: admin/partials/form-whsm.php:1025 admin/partials/form-whsm.php:1036
 #: admin/partials/form-whsm.php:1429 admin/partials/form-whsm.php:1440
 msgid "Width %s 🔒"
 msgstr "Breite %s 🔒"
 
-#: admin/partials/whsm-general-setting.php:120
+#: admin/partials/whsm-general-setting.php:121
 #| msgid ""
 #| "With this option, you can create conditional hide shipping method rules "
 #| "as your business needs"
@@ -2478,11 +2566,11 @@ msgstr ""
 "Sie können mit Ihrer Kreditkarte über Stripe Checkout bezahlen. Oder über "
 "Ihr PayPal-Konto."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:1484
+#: admin/class-woo-hide-shipping-methods-admin.php:1476
 msgid "You do not have permission to edit this post."
 msgstr "Sie sind nicht berechtigt, diesen Beitrag zu bearbeiten."
 
-#: admin/class-woo-hide-shipping-methods-admin.php:210
+#: admin/class-woo-hide-shipping-methods-admin.php:202
 msgid ""
 "You need to select product specific option in Hide Shipping Rules for "
 "product based option."
@@ -2494,13 +2582,13 @@ msgstr ""
 msgid "YouTube channel"
 msgstr "YouTube-Kanal"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:159
+#: admin/class-woo-hide-shipping-methods-admin.php:151
 #: admin/partials/form-whsm.php:846 admin/partials/form-whsm.php:1248
 msgid "Zone"
 msgstr "Zone"
 
-#: admin/class-woo-hide-shipping-methods-admin.php:251
-#: admin/class-woo-hide-shipping-methods-admin.php:310
+#: admin/class-woo-hide-shipping-methods-admin.php:243
+#: admin/class-woo-hide-shipping-methods-admin.php:302
 #: admin/partials/form-whsm.php:853 admin/partials/form-whsm.php:861
 #: admin/partials/form-whsm.php:1255 admin/partials/form-whsm.php:1263
 msgid "Zone 🔒"
