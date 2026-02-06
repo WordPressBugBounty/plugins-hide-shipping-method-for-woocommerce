@@ -16,7 +16,7 @@
  * Plugin Name: Hide Shipping Method For WooCommerce
  * Plugin URI:          https://www.thedotstore.com/hide-shipping-method-for-woocommerce
  * Description:         Allows store owners to hide shipping methods based on specific conditions!
- * Version:             1.5.3
+ * Version:             1.5.4
  * Author:              theDotstore
  * Author URI:          https://www.thedotstore.com/
  * License:             GPL-2.0+
@@ -25,9 +25,10 @@
  * Domain Path:         /languages
  * Requires Plugins:    woocommerce
  *
+ * 
  * WC requires at least: 4.1
- * WC tested up to:      10.0.4
- * WP tested up to:      6.8.2
+ * WC tested up to:      10.4.3
+ * WP tested up to:      6.9
  * Requires PHP:         5.3
  * Requires at least:    5.0
  */
@@ -98,7 +99,7 @@ if ( function_exists( 'whsm_fs' ) ) {
     }
 }
 if ( !defined( 'WOO_HIDE_SHIPPING_METHODS_VERSION' ) ) {
-    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.5.3' );
+    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.5.4' );
 }
 if ( !defined( 'WHSM_PLUGIN_URL' ) ) {
     define( 'WHSM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

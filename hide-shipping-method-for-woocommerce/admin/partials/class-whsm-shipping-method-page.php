@@ -278,6 +278,11 @@ if ( !class_exists( 'WHSM_Shipping_Method_Page' ) ) {
                             );
                             $cost_rule_match = ( isset( $get_cost_rule_match ) ? array_map( 'sanitize_text_field', $get_cost_rule_match ) : array() );
                             $get_shipping_method_list = ( isset( $shipping_method_list ) ? array_map( 'sanitize_text_field', $shipping_method_list ) : array() );
+                            // Validate shipping_method_list - must have at least one selection
+                            if ( empty( $get_shipping_method_list ) ) {
+                                self::$admin_object->whsma_updated_message( 'validated', $get_tab, esc_html__( 'Please select at least one shipping method.', 'woo-hide-shipping-methods' ) );
+                                return;
+                            }
                             $feesArray = array();
                             $conditions_values_array = array();
                             $condition_key = ( isset( $get_condition_key ) ? $get_condition_key : array() );

@@ -1,15 +1,15 @@
-# Copyright (C) 2025 theDotstore
+# Copyright (C) 2026 theDotstore
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
 "Project-Id-Version: Hide Shipping Method For WooCommerce Pro (Premium) "
-"1.5.3\n"
+"1.5.4\n"
 "Report-Msgid-Bugs-To: https://www.multidots.com/contact/\n"
-"POT-Creation-Date: 2025-07-31 16:31:31+00:00\n"
+"POT-Creation-Date: 2026-01-08 10:03:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Sagar Jariwala <sagar.jariwala@multidots.com>\n"
 "Language-Team: Sagar Jariwala <sagar.jariwala@multidots.com>\n"
 "Language: en\n"
@@ -772,28 +772,32 @@ msgstr ""
 msgid "Rule title"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:691
+#: admin/partials/class-whsm-shipping-method-page.php:279
+msgid "Please select at least one shipping method."
+msgstr ""
+
+#: admin/partials/class-whsm-shipping-method-page.php:697
 msgid "Error saving shipping method."
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:777
+#: admin/partials/class-whsm-shipping-method-page.php:783
 msgid "Hide Shipping Rules"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:785
+#: admin/partials/class-whsm-shipping-method-page.php:791
 msgid "Add New 🔒"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:789
-#: admin/partials/class-whsm-shipping-method-page.php:794
+#: admin/partials/class-whsm-shipping-method-page.php:795
+#: admin/partials/class-whsm-shipping-method-page.php:800
 msgid "Add New"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:801
+#: admin/partials/class-whsm-shipping-method-page.php:807
 msgid "Search results for &#8220;%s&#8221;"
 msgstr ""
 
-#: admin/partials/class-whsm-shipping-method-page.php:809
+#: admin/partials/class-whsm-shipping-method-page.php:815
 msgid "Search"
 msgstr ""
 
@@ -2192,15 +2196,15 @@ msgstr ""
 msgid "Docs"
 msgstr ""
 
-#: public/class-woo-hide-shipping-methods-public.php:4006
-#: public/class-woo-hide-shipping-methods-public.php:4013
+#: public/class-woo-hide-shipping-methods-public.php:4010
+#: public/class-woo-hide-shipping-methods-public.php:4017
 msgid "Key %d does not exist in array"
 msgstr ""
 
-#: public/class-woo-hide-shipping-methods-public.php:4017
+#: public/class-woo-hide-shipping-methods-public.php:4021
 msgid "Key %d does not contain scalar value"
 msgstr ""
 
-#: woo-hide-shipping-methods.php:316
+#: woo-hide-shipping-methods.php:318
 msgid "Activate Plugin"
 msgstr ""
