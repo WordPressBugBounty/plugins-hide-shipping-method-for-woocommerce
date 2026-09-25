@@ -222,7 +222,7 @@ class Woo_Hide_Shipping_Methods_Public {
         $cost_rule_match = get_post_meta( $sm_post_data, 'cost_rule_match', true );
         if ( !empty( $cost_rule_match ) ) {
             if ( is_serialized( $cost_rule_match ) ) {
-                $cost_rule_match = maybe_unserialize( $cost_rule_match );
+                $cost_rule_match = whsm_safe_unserialize( $cost_rule_match );
             } else {
                 $cost_rule_match = $cost_rule_match;
             }

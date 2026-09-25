@@ -154,7 +154,7 @@ if ( !class_exists( 'WHSM_Shipping_Method_Page' ) ) {
                                 if ( '_wp_old_slug' === $meta_key ) {
                                     continue;
                                 }
-                                $meta_value = maybe_unserialize( $meta_data[0] );
+                                $meta_value = whsm_safe_unserialize( $meta_data[0] );
                                 update_post_meta( $new_post_id, $meta_key, $meta_value );
                             }
                         }
@@ -278,8 +278,15 @@ if ( !class_exists( 'WHSM_Shipping_Method_Page' ) ) {
                             );
                             $cost_rule_match = ( isset( $get_cost_rule_match ) ? array_map( 'sanitize_text_field', $get_cost_rule_match ) : array() );
                             $get_shipping_method_list = ( isset( $shipping_method_list ) ? array_map( 'sanitize_text_field', $shipping_method_list ) : array() );
-                            // Validate shipping_method_list - must have at least one selection
-                            if ( empty( $get_shipping_method_list ) ) {
+                            $get_shipping_source = filter_input( INPUT_POST, 'shipping_method_option', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+                            $get_shipping_source_option = filter_input( INPUT_POST, 'shipping_option', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+                            // The selected shipping source decides which field has to be filled in.
+                            if ( 'custom_shipping_method' === $get_shipping_source ) {
+                                if ( '' === trim( (string) $get_shipping_source_option ) ) {
+                                    self::$admin_object->whsma_updated_message( 'validated', $get_tab, esc_html__( 'Please enter at least one shipping method option.', 'woo-hide-shipping-methods' ) );
+                                    return;
+                                }
+                            } elseif ( empty( $get_shipping_method_list ) ) {
                                 self::$admin_object->whsma_updated_message( 'validated', $get_tab, esc_html__( 'Please select at least one shipping method.', 'woo-hide-shipping-methods' ) );
                                 return;
                             }

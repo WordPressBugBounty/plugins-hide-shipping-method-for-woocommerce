@@ -16,7 +16,7 @@
  * Plugin Name: Hide Shipping Method For WooCommerce
  * Plugin URI:          https://www.thedotstore.com/hide-shipping-method-for-woocommerce
  * Description:         Allows store owners to hide shipping methods based on specific conditions!
- * Version:             1.5.4
+ * Version:             1.5.5
  * Author:              theDotstore
  * Author URI:          https://www.thedotstore.com/
  * License:             GPL-2.0+
@@ -27,8 +27,8 @@
  *
  * 
  * WC requires at least: 4.1
- * WC tested up to:      10.4.3
- * WP tested up to:      6.9
+ * WC tested up to:      11.1.1
+ * WP tested up to:      7.1.1
  * Requires PHP:         5.3
  * Requires at least:    5.0
  */
@@ -51,19 +51,19 @@ if ( function_exists( 'whsm_fs' ) ) {
                 // Include Freemius SDK.
                 require_once dirname( __FILE__ ) . '/freemius/start.php';
                 $whsm_fs = fs_dynamic_init( array(
-                    'id'             => '4743',
-                    'slug'           => 'woo-hide-shipping-methods',
-                    'type'           => 'plugin',
-                    'public_key'     => 'pk_71be4de10d0508098c1b7ca85e591',
-                    'is_premium'     => false,
-                    'premium_suffix' => 'Pro',
-                    'has_addons'     => false,
-                    'has_paid_plans' => true,
-                    'trial'          => array(
+                    'id'               => '4743',
+                    'slug'             => 'woo-hide-shipping-methods',
+                    'type'             => 'plugin',
+                    'public_key'       => 'pk_71be4de10d0508098c1b7ca85e591',
+                    'is_premium'       => false,
+                    'premium_suffix'   => 'Pro',
+                    'has_addons'       => false,
+                    'has_paid_plans'   => true,
+                    'trial'            => array(
                         'days'               => 14,
                         'is_require_payment' => true,
                     ),
-                    'menu'           => array(
+                    'menu'             => array(
                         'slug'           => 'whsm-start-page',
                         'override_exact' => true,
                         'contact'        => false,
@@ -73,7 +73,8 @@ if ( function_exists( 'whsm_fs' ) ) {
                             'slug' => 'woocommerce',
                         ),
                     ),
-                    'is_live'        => true,
+                    'is_live'          => true,
+                    'is_org_compliant' => true,
                 ) );
             }
             return $whsm_fs;
@@ -99,7 +100,7 @@ if ( function_exists( 'whsm_fs' ) ) {
     }
 }
 if ( !defined( 'WOO_HIDE_SHIPPING_METHODS_VERSION' ) ) {
-    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.5.4' );
+    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.5.5' );
 }
 if ( !defined( 'WHSM_PLUGIN_URL' ) ) {
     define( 'WHSM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -141,6 +142,32 @@ if ( !defined( 'WHSM_PLUGIN_IDS' ) ) {
             'marketing_feature_list' => array(esc_html( 'Add a fixed package fee when free shipping is selected.' ), esc_html( 'Keep checkout clean and transparent with labeled service fees.' ), esc_html( 'Offset packing, handling, or material costs without increasing product prices.' )),
         ),
     ) );
+}
+/**
+ * Unserialize a stored hide shipping rule value without creating objects.
+ *
+ * Rule meta can hold any string, so objects are refused here to keep a
+ * serialized payload from being instantiated while a rule is read.
+ *
+ * @since    1.5.5
+ * @param    mixed $value Stored rule value.
+ * @return   mixed Array or scalar, never an object.
+ */
+if ( !function_exists( 'whsm_safe_unserialize' ) ) {
+    function whsm_safe_unserialize(  $value  ) {
+        if ( is_array( $value ) ) {
+            return array_map( 'whsm_safe_unserialize', $value );
+        }
+        if ( !is_string( $value ) || !is_serialized( $value ) ) {
+            return ( is_object( $value ) ? array() : $value );
+        }
+        $data = unserialize( $value, array(
+            'allowed_classes' => false,
+        ) );
+        // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.serialize_unserialize -- Object injection is prevented by allowed_classes.
+        return ( is_array( $data ) ? array_map( 'whsm_safe_unserialize', $data ) : array() );
+    }
+
 }
 add_action( 'admin_init', 'whsm__initialize_plugin' );
 /**

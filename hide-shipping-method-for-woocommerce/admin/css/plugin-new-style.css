@@ -10,6 +10,8 @@ body{background-color: #F2F2F3}
 #wpfooter p#footer-upgrade{display:none;}
 #wpfooter p#footer-left a,.fs-modal a,body a,body a:hover,body a:focus{color: var(--dotstore-primary);outline:none;-webkit-box-shadow:none;box-shadow:none}
 #adminmenu .wp-has-current-submenu .wp-not-current-submenu + .wp-submenu{border-left:none;}
+input[type=radio]:checked, input[type=checkbox]:checked{background:transparent;border-color:#8c8f94;}
+input[type=radio]{border-color:#8c8f94;}
 input[type=checkbox]:checked:before{content:'';-webkit-mask:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E);mask:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E);background-color:var(--dotstore-primary);-webkit-mask-image:url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E);}
 input[type=radio]:checked::before{background-color:var(--dotstore-primary);}
 input[type=checkbox]:focus,input[type=radio]:focus{border-color:var(--dotstore-primary);-webkit-box-shadow:none;box-shadow:none;}
@@ -61,7 +63,8 @@ header.dots-header{background-color:#fff;border-radius:5px;-webkit-box-shadow:0 
 .dots-settings-inner-main .wp-list-table{border:none;-webkit-box-shadow:0 4px 10px rgb(0 0 0 / 8%);box-shadow:0 4px 10px rgb(0 0 0 / 8%);margin:20px 0;border-radius:5px;}
 .dots-settings-inner-main .wp-list-table a{color:#000;}
 .dots-settings-inner-main .wp-list-table strong a{font-weight:500;}
-.dots-settings-inner-main .wp-list-table th a{padding:13px 8px;}
+.dots-settings-inner-main .wp-list-table thead th a, .dots-settings-inner-main .wp-list-table tfoot th a{padding:13px 8px;}
+
 .dots-settings-inner-main .wp-list-table .row-actions .delete a{color:var(--dotstore-remove);}
 .dots-settings-inner-main .wp-list-table td,.dots-settings-inner-main .wp-list-table th{color:#000}
 .dots-settings-inner-main .striped>tbody>:nth-child(odd),.dots-settings-inner-main ul.striped>:nth-child(odd){background-color:#F5F5F5;}
@@ -234,6 +237,9 @@ header.dots-header{background-color:#fff;border-radius:5px;-webkit-box-shadow:0 
 #dotsstoremain .whsm-pro-label{position:relative;cursor:pointer;display:inline-block;margin:1px 0 0 6px;}
 #dotsstoremain .whsm-pro-label::before{content:"🔒";display:inline-block;font-size:15px;line-height:normal;}
 .whsm-upgrade-pro-to-unlock .shipping-method-table{opacity:0.6;pointer-events:none;}
+.upgrade-to-pro-modal-main .pro-modal-expiry-wrapper{text-align:center;}
+.upgrade-to-pro-modal-main .pro-modal-expiry-label{border: 1px solid #d17c00;background-color: #fef2de;padding: 8px 12px 7px;text-transform: uppercase;color: #d17c00;font-weight: 600;display: inline-block;font-size: 12px;line-height: normal;border-radius: 30px;margin-bottom: 16px;}
+.upgrade-to-pro-modal-main .pro-modal-expiry-text{text-transform: capitalize;font-size: 14px;line-height: normal;margin: 18px 0 0;color: #707070;display: inline-block;}
 
 /* upgrade to pro modal css */
 @-webkit-keyframes wcpoaModalEffect{

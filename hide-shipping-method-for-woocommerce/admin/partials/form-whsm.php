@@ -17,20 +17,20 @@ if ( $get_action === 'edit' ) {
         $sm_title = __( get_the_title( $get_post_id ), 'woo-hide-shipping-methods' );
         $shipping_method_list = get_post_meta( $get_post_id, 'shipping_method_list', true );
         if ( is_serialized( $shipping_method_list ) ) {
-            $shipping_method_list = maybe_unserialize( $shipping_method_list );
+            $shipping_method_list = whsm_safe_unserialize( $shipping_method_list );
         } else {
             $shipping_method_list = $shipping_method_list;
         }
         $sm_metabox = get_post_meta( $get_post_id, 'sm_metabox', true );
         if ( is_serialized( $sm_metabox ) ) {
-            $sm_metabox = maybe_unserialize( $sm_metabox );
+            $sm_metabox = whsm_safe_unserialize( $sm_metabox );
         } else {
             $sm_metabox = $sm_metabox;
         }
         $cost_rule_match = get_post_meta( $get_post_id, 'cost_rule_match', true );
         if ( !empty( $cost_rule_match ) ) {
             if ( is_serialized( $cost_rule_match ) ) {
-                $cost_rule_match = maybe_unserialize( $cost_rule_match );
+                $cost_rule_match = whsm_safe_unserialize( $cost_rule_match );
             } else {
                 $cost_rule_match = $cost_rule_match;
             }
